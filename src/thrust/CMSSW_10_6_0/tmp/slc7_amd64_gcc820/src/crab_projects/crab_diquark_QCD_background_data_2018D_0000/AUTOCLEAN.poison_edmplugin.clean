@@ -1,0 +1,2 @@
+01:/usr/bin/rm -rf tmp/slc7_amd64_gcc820/edmplugins/poison/crab_projects/crab_diquark_QCD_background_data_2018D_0000
+01:/usr/bin/touch tmp/common/cache/packs/changed

@@ -1,0 +1,8 @@
+pluginanalyzersanalyzers.so diquarkAnalyzer CMS%EDM%Framework%Module
+pluginanalyzersanalyzers.so diquarkAnalyzer CMS%EDM%Framework%ParameterSet%Description
+pluginanalyzersanalyzers.so genPartAnalyzer CMS%EDM%Framework%Module
+pluginanalyzersanalyzers.so genPartAnalyzer CMS%EDM%Framework%ParameterSet%Description
+pluginanalyzersanalyzers.so jetAnalyzer CMS%EDM%Framework%Module
+pluginanalyzersanalyzers.so jetAnalyzer CMS%EDM%Framework%ParameterSet%Description
+pluginanalyzersanalyzers.so susyAnalyzer CMS%EDM%Framework%Module
+pluginanalyzersanalyzers.so susyAnalyzer CMS%EDM%Framework%ParameterSet%Description

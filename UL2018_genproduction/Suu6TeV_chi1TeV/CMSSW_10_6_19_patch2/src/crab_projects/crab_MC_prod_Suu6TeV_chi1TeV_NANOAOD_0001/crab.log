@@ -1,0 +1,140 @@
+Updating process to run ParticleNet before it's included in MiniAOD
+Updating process to run DeepDoubleXv2 on datasets before 11X
+Will recalculate the following discriminators on AK8 jets: pfParticleNetJetTags:probTbcq, pfParticleNetJetTags:probTbqq, pfParticleNetJetTags:probTbc, pfParticleNetJetTags:probTbq, pfParticleNetJetTags:probTbel, pfParticleNetJetTags:probTbmu, pfParticleNetJetTags:probTbta, pfParticleNetJetTags:probWcq, pfParticleNetJetTags:probWqq, pfParticleNetJetTags:probZbb, pfParticleNetJetTags:probZcc, pfParticleNetJetTags:probZqq, pfParticleNetJetTags:probHbb, pfParticleNetJetTags:probHcc, pfParticleNetJetTags:probHqqqq, pfParticleNetJetTags:probQCDbb, pfParticleNetJetTags:probQCDcc, pfParticleNetJetTags:probQCDb, pfParticleNetJetTags:probQCDc, pfParticleNetJetTags:probQCDothers, pfParticleNetDiscriminatorsJetTags:TvsQCD, pfParticleNetDiscriminatorsJetTags:WvsQCD, pfParticleNetDiscriminatorsJetTags:ZvsQCD, pfParticleNetDiscriminatorsJetTags:ZbbvsQCD, pfParticleNetDiscriminatorsJetTags:HbbvsQCD, pfParticleNetDiscriminatorsJetTags:HccvsQCD, pfParticleNetDiscriminatorsJetTags:H4qvsQCD, pfMassDecorrelatedParticleNetJetTags:probXbb, pfMassDecorrelatedParticleNetJetTags:probXcc, pfMassDecorrelatedParticleNetJetTags:probXqq, pfMassDecorrelatedParticleNetJetTags:probQCDbb, pfMassDecorrelatedParticleNetJetTags:probQCDcc, pfMassDecorrelatedParticleNetJetTags:probQCDb, pfMassDecorrelatedParticleNetJetTags:probQCDc, pfMassDecorrelatedParticleNetJetTags:probQCDothers, pfMassDecorrelatedParticleNetDiscriminatorsJetTags:XbbvsQCD, pfMassDecorrelatedParticleNetDiscriminatorsJetTags:XccvsQCD, pfMassDecorrelatedParticleNetDiscriminatorsJetTags:XqqvsQCD, pfMassIndependentDeepDoubleBvLV2JetTags:probHbb, pfMassIndependentDeepDoubleCvLV2JetTags:probHcc, pfMassIndependentDeepDoubleCvBV2JetTags:probHcc
+add DeepMET Producers
+DEBUG 2021-04-06 08:44:10.800 UTC: 	 CRAB Client version: v3.210127
+DEBUG 2021-04-06 08:44:10.800 UTC: 	 Running on: Linux cmslpc178.fnal.gov 3.10.0-1160.15.2.el7.x86_64 #1 SMP Tue Feb 2 08:13:55 CST 2021 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2021-04-06 08:44:10.800 UTC: 	 Executing command: 'submit'
+DEBUG 2021-04-06 08:44:10.801 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2021-04-06 08:44:10.803 UTC: 	 Will use CRAB configuration file crab_diquark_NANOAOD_prod_cfg.py
+DEBUG 2021-04-06 08:44:10.803 UTC: 	 Loading CRAB configuration file.
+DEBUG 2021-04-06 08:44:10.810 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2021-04-06 08:44:10.828 UTC: 	 Checking credentials
+DEBUG 2021-04-06 08:44:10.828 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2021-04-06 08:44:10.828 UTC: 	 Getting proxy life time left
+DEBUG 2021-04-06 08:44:10.932 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 39349
+
+ error: 
+ retcode : 0
+DEBUG 2021-04-06 08:44:11.037 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 39349
+
+ error: 
+ retcode : 0
+DEBUG 2021-04-06 08:44:11.038 UTC: 	 Proxy valid for 10:55:49 hours
+DEBUG 2021-04-06 08:44:11.142 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2021-04-06 08:44:11.741 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+DEBUG 2021-04-06 08:44:11.851 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -identity
+ output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+
+ error: 
+ retcode : 0
+DEBUG 2021-04-06 08:44:11.857 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2021-04-06 08:44:11.857 UTC: 	 using b7b51e0178e197a43a1d723fd43ab6570e42a3d5 as credential login name
+DEBUG 2021-04-06 08:44:12.863 UTC: 	 Executing : 
+ command : myproxy-info -l b7b51e0178e197a43a1d723fd43ab6570e42a3d5 -s myproxy.cern.ch
+ output : username: b7b51e0178e197a43a1d723fd43ab6570e42a3d5
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 552:01:32  (23.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2021-04-06 08:44:12.864 UTC: 	 Myproxy is valid: 1987292
+DEBUG 2021-04-06 08:44:12.864 UTC: 	 Retrieving username ...
+DEBUG 2021-04-06 08:44:12.864 UTC: 	 Retrieving username from CRIC...
+DEBUG 2021-04-06 08:44:15.313 UTC: 	 username is ecannaer
+DEBUG 2021-04-06 08:44:15.320 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2021-04-06 08:44:15.320 UTC: 	 using ecannaer_CRAB as credential login name
+DEBUG 2021-04-06 08:44:16.227 UTC: 	 Executing : 
+ command : myproxy-info -l ecannaer_CRAB -s myproxy.cern.ch
+ output : username: ecannaer_CRAB
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 552:01:38  (23.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2021-04-06 08:44:16.227 UTC: 	 Myproxy is valid: 1987298
+DEBUG 2021-04-06 08:44:16.228 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: b7b51e0178e197a43a1d723fd43ab6570e42a3d5  - validity: 23 days, 0:01:32
+  Credential exists on myproxy: username: ecannaer_CRAB  - validity: 23 days, 0:01:38
+DEBUG 2021-04-06 08:44:16.228 UTC: 	 Command use: submit
+DEBUG 2021-04-06 08:44:16.228 UTC: 	 Options use: ['-c', 'crab_diquark_NANOAOD_prod_cfg.py']
+DEBUG 2021-04-06 08:44:16.812 UTC: 	 CRABClient version: v3.210127
+DEBUG 2021-04-06 08:44:16.813 UTC: 	 Instance is prod
+DEBUG 2021-04-06 08:44:16.813 UTC: 	 Server base url is cmsweb-k8s-prod.cern.ch
+DEBUG 2021-04-06 08:44:16.813 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2021-04-06 08:44:16.813 UTC: 	 Started submission
+DEBUG 2021-04-06 08:44:16.813 UTC: 	 Working on /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2/src/crab_projects/crab_MC_prod_Suu6TeV_chi1TeV_NANOAOD_0001
+DEBUG 2021-04-06 08:44:17.503 UTC: 	 Loading required information from the environment
+DEBUG 2021-04-06 08:44:17.503 UTC: 	 Found CMSSW_10_6_19_patch2 for slc7_amd64_gcc700 with base /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2
+DEBUG 2021-04-06 08:44:17.503 UTC: 	 Loading required information from the environment
+DEBUG 2021-04-06 08:44:17.503 UTC: 	 Found CMSSW_10_6_19_patch2 for slc7_amd64_gcc700 with base /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2
+DEBUG 2021-04-06 08:44:17.503 UTC: 	 UNIQUE NAME: tarUUID b542de50-8a7f-404c-876c-355df81bf59e 
+DEBUG 2021-04-06 08:44:17.504 UTC: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferOutputs = True
+config.General.workArea = 'crab_projects'
+config.General.requestName = 'MC_prod_Suu6TeV_chi1TeV_NANOAOD_0001'
+config.section_('JobType')
+config.JobType.psetName = 'B2G-RunIISummer20UL17NanoAODv2-00001_1_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.allowUndistributedCMSSW = True
+config.section_('Data')
+config.Data.inputDataset = '/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_Suu6TeV_chi1TeV_MINIAOD-07bb2832fd9cf08ee8da01c42829422a/USER'
+config.Data.outputDatasetTag = 'B2G-RunIISummer20UL18p_Suu6TeV_chi1TeV_NANOAOD'
+config.Data.publishDBS = 'phys03'
+config.Data.publication = True
+config.Data.unitsPerJob = 1
+config.Data.inputDBS = 'phys03'
+config.Data.splitting = 'FileBased'
+config.Data.totalUnits = -1
+config.section_('Site')
+config.Site.storageSite = 'T3_US_FNALLPC'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2021-04-06 08:44:17.504 UTC: 	 self.config.JobType.psetName: B2G-RunIISummer20UL17NanoAODv2-00001_1_cfg.py
+INFO 2021-04-06 08:44:17.504 UTC: 	 Importing CMSSW configuration B2G-RunIISummer20UL17NanoAODv2-00001_1_cfg.py
+INFO 2021-04-06 08:44:26.523 UTC: 	 Finished importing CMSSW configuration B2G-RunIISummer20UL17NanoAODv2-00001_1_cfg.py
+DEBUG 2021-04-06 08:44:26.524 UTC: 	 Writing CMSSW configuration to /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2/src/crab_projects/crab_MC_prod_Suu6TeV_chi1TeV_NANOAOD_0001/inputs/PSet.py
+DEBUG 2021-04-06 08:44:28.758 UTC: 	 The following EDM output files will be collected: ['B2G-RunIISummer20UL17NanoAODv2-00001.root']
+DEBUG 2021-04-06 08:44:28.758 UTC: 	 The following TFile output files will be collected: []
+DEBUG 2021-04-06 08:44:28.758 UTC: 	 The following user output files (not listed as PoolOuputModule or TFileService in the CMSSW PSet) will be collected: 
+DEBUG 2021-04-06 08:44:28.758 UTC: 	 Loading required information from the environment
+DEBUG 2021-04-06 08:44:28.758 UTC: 	 Found CMSSW_10_6_19_patch2 for slc7_amd64_gcc700 with base /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2
+DEBUG 2021-04-06 08:44:28.758 UTC: 	 Making tarball in /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2/src/crab_projects/crab_MC_prod_Suu6TeV_chi1TeV_NANOAOD_0001/inputs/b542de50-8a7f-404c-876c-355df81bf59edefault.tgz
+DEBUG 2021-04-06 08:44:28.760 UTC: 	 Checking directory /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2/lib
+DEBUG 2021-04-06 08:44:28.760 UTC: 	 Adding directory /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2/lib to tarball
+DEBUG 2021-04-06 08:44:28.764 UTC: 	 Checking directory /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2/biglib
+DEBUG 2021-04-06 08:44:28.764 UTC: 	 Adding directory /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2/biglib to tarball
+DEBUG 2021-04-06 08:44:28.767 UTC: 	 Checking directory /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2/module
+DEBUG 2021-04-06 08:44:29.355 UTC: 	 Uploading archive /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2/src/crab_projects/crab_MC_prod_Suu6TeV_chi1TeV_NANOAOD_0001/inputs/b542de50-8a7f-404c-876c-355df81bf59edefault.tgz (478 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch:8443/crabcache
+DEBUG 2021-04-06 08:44:31.026 UTC: 	 Loading required information from the environment
+DEBUG 2021-04-06 08:44:31.027 UTC: 	 Found CMSSW_10_6_19_patch2 for slc7_amd64_gcc700 with base /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2
+DEBUG 2021-04-06 08:44:31.027 UTC: 	 Making tarball in /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2/src/crab_projects/crab_MC_prod_Suu6TeV_chi1TeV_NANOAOD_0001/inputs/debugFiles.tgz
+DEBUG 2021-04-06 08:44:31.033 UTC: 	 Uploading archive /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2/src/crab_projects/crab_MC_prod_Suu6TeV_chi1TeV_NANOAOD_0001/inputs/debugFiles.tgz (1 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch:8443/crabcache
+DEBUG 2021-04-06 08:44:31.782 UTC: 	 Result uploading input files: 4848f3b5c41d324753884729e01aa133121a5691ebfd29811f74848dfa083fe0.tar.gz 
+INFO 2021-04-06 08:44:31.783 UTC: 	 Sending the request to the server at cmsweb-k8s-prod.cern.ch
+DEBUG 2021-04-06 08:44:31.783 UTC: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T3_US_FNALLPC', 'algoargs': 1, 'cachefilename': '4848f3b5c41d324753884729e01aa133121a5691ebfd29811f74848dfa083fe0.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_10_6_19_patch2', 'edmoutfiles': ['B2G-RunIISummer20UL17NanoAODv2-00001.root'], 'userfiles': [], 'primarydataset': '', 'inputdata': '/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_Suu6TeV_chi1TeV_MINIAOD-07bb2832fd9cf08ee8da01c42829422a/USER', 'dryrun': 0, 'workflow': 'crab_MC_prod_Suu6TeV_chi1TeV_NANOAOD_0001', 'cacheurl': u'https://cmsweb.cern.ch:8443/crabcache', 'nonprodsw': 1, 'tfileoutfiles': [], 'oneEventMode': 0, 'debugfilename': '1bd23935bc02b45fc08c6df2bf37651da58b70884b907016fb215faba1c61ab7.tar.gz', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc7_amd64_gcc700', 'totalunits': -1, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'B2G-RunIISummer20UL18p_Suu6TeV_chi1TeV_NANOAOD'} 
+DEBUG 2021-04-06 08:44:31.783 UTC: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=0&useparent=0&asyncdest=T3_US_FNALLPC&algoargs=1&cachefilename=4848f3b5c41d324753884729e01aa133121a5691ebfd29811f74848dfa083fe0.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_10_6_19_patch2&primarydataset=&inputdata=%2FSuuToChiChi%2Fecannaer-B2G-RunIISummer20UL18p_Suu6TeV_chi1TeV_MINIAOD-07bb2832fd9cf08ee8da01c42829422a%2FUSER&dryrun=0&workflow=crab_MC_prod_Suu6TeV_chi1TeV_NANOAOD_0001&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%3A8443%2Fcrabcache&nonprodsw=1&oneEventMode=0&debugfilename=1bd23935bc02b45fc08c6df2bf37651da58b70884b907016fb215faba1c61ab7.tar.gz&saveoutput=1&publication=1&jobarch=slc7_amd64_gcc700&totalunits=-1&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=B2G-RunIISummer20UL18p_Suu6TeV_chi1TeV_NANOAOD&edmoutfiles=B2G-RunIISummer20UL17NanoAODv2-00001.root
+DEBUG 2021-04-06 08:44:32.522 UTC: 	 Result: {u'result': [{u'RequestName': u'210406_084432:ecannaer_crab_MC_prod_Suu6TeV_chi1TeV_NANOAOD_0001'}]}
+INFO 2021-04-06 08:44:32.526 UTC: 	 Success: Your task has been delivered to the prod CRAB3 server.
+INFO 2021-04-06 08:44:32.526 UTC: 	 Task name: 210406_084432:ecannaer_crab_MC_prod_Suu6TeV_chi1TeV_NANOAOD_0001
+INFO 2021-04-06 08:44:32.527 UTC: 	 Project dir: crab_projects/crab_MC_prod_Suu6TeV_chi1TeV_NANOAOD_0001
+INFO 2021-04-06 08:44:32.527 UTC: 	 Please use ' crab status -d crab_projects/crab_MC_prod_Suu6TeV_chi1TeV_NANOAOD_0001 ' to check how the submission process proceeds.
+DEBUG 2021-04-06 08:44:32.527 UTC: 	 About to return
+INFO 2021-04-06 08:44:32.532 UTC: 	 Log file is /uscms_data/d3/cannaert/UL2018_genproduction/Suu6TeV_chi1TeV/CMSSW_10_6_19_patch2/src/crab_projects/crab_MC_prod_Suu6TeV_chi1TeV_NANOAOD_0001/crab.log

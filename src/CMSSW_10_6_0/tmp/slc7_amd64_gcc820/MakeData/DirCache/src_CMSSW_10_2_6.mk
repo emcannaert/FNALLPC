@@ -1,0 +1,2 @@
+ALL_SUBSYSTEMS+=CMSSW_10_2_6
+subdirs_src_CMSSW_10_2_6 = src_CMSSW_10_2_6_config src_CMSSW_10_2_6_src

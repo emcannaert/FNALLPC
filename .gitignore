@@ -7,6 +7,7 @@ genproduction_chi3TeV_Suu8TeV/
 genproduction_chi500GeV/
 genproduction_chi850GeV_Suu4TeV/
 genproduction_chi850GeV_Suu5TeV/
-src/
+
+.ssh/
 particleTreeDrawer_cfg.py
 *.root

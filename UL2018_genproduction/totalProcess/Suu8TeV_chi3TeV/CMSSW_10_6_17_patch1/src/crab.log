@@ -1,0 +1,38 @@
+DEBUG 2021-08-18 10:20:04.539 UTC: 	 CRAB Client version: v3.210610
+DEBUG 2021-08-18 10:20:04.539 UTC: 	 Running on: Linux cmslpc177.fnal.gov 3.10.0-1160.36.2.el7.x86_64 #1 SMP Mon Jul 26 08:21:44 CDT 2021 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2021-08-18 10:20:04.539 UTC: 	 Executing command: 'status'
+DEBUG 2021-08-18 10:20:04.552 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+ERROR 2021-08-18 10:20:04.559 UTC: 	 Error: crab_diquark_RECO_prod_cfg.py is not a valid CRAB project directory.
+ERROR 2021-08-18 10:20:04.559 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210610.01/bin/crab", line 151, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210610.01/bin/crab", line 136, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210610.01/lib/CRABClient/Commands/status.py", line 39, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210610.01/lib/CRABClient/Commands/SubCommand.py", line 270, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210610.01/lib/CRABClient/Commands/SubCommand.py", line 646, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_diquark_RECO_prod_cfg.py is not a valid CRAB project directory.
+INFO 2021-08-18 10:20:04.563 UTC: 	 Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu8TeV_chi3TeV/CMSSW_10_6_17_patch1/src/crab.log
+DEBUG 2021-08-18 13:59:32.997 UTC: 	 CRAB Client version: v3.210610
+DEBUG 2021-08-18 13:59:32.997 UTC: 	 Running on: Linux cmslpc178.fnal.gov 3.10.0-1160.36.2.el7.x86_64 #1 SMP Mon Jul 26 08:21:44 CDT 2021 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2021-08-18 13:59:32.997 UTC: 	 Executing command: 'status'
+DEBUG 2021-08-18 13:59:32.997 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+ERROR 2021-08-18 13:59:33.007 UTC: 	 Error: crab_projects/crab_MC_prod_cSuu8TeV_chi3TeV_ALL_DECAYS_HLT_0001/ is not a valid CRAB project directory.
+ERROR 2021-08-18 13:59:33.007 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210610.01/bin/crab", line 151, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210610.01/bin/crab", line 136, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210610.01/lib/CRABClient/Commands/status.py", line 39, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210610.01/lib/CRABClient/Commands/SubCommand.py", line 270, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210610.01/lib/CRABClient/Commands/SubCommand.py", line 646, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_projects/crab_MC_prod_cSuu8TeV_chi3TeV_ALL_DECAYS_HLT_0001/ is not a valid CRAB project directory.
+INFO 2021-08-18 13:59:33.009 UTC: 	 Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu8TeV_chi3TeV/CMSSW_10_6_17_patch1/src/crab.log

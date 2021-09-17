@@ -1,0 +1,4 @@
+DEBUG 2021-08-17 14:12:57.844 UTC: 	 CRAB Client version: v3.210610
+DEBUG 2021-08-17 14:12:57.844 UTC: 	 Running on: Linux cmslpc177.fnal.gov 3.10.0-1160.36.2.el7.x86_64 #1 SMP Mon Jul 26 08:21:44 CDT 2021 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2021-08-17 14:12:57.844 UTC: 	 Executing command: 'status'
+DEBUG 2021-08-17 14:12:57.845 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3

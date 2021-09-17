@@ -1,0 +1,825 @@
+DEBUG 2020-08-04 21:58:20.963 UTC: 	 CRAB Client version: v3.200531
+DEBUG 2020-08-04 21:58:20.964 UTC: 	 Running on: Linux cmslpc156.fnal.gov 3.10.0-1127.10.1.el7.x86_64 #1 SMP Tue Jun 2 10:05:57 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-08-04 21:58:20.983 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-08-04 21:58:20.983 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-04 21:58:20.984 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-08-04 21:58:20.997 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-08-04 21:58:20.997 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-08-04 21:58:21.000 UTC: 	 Error while loading CRAB configuration:
+Non-ASCII character '\xe2' in file /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_diquark_QCD_ccfg.py on line 5, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details (crab_diquark_QCD_ccfg.py, line 5)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-08-04 21:58:21.000 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/SubCommand.py", line 319, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/SubCommand.py", line 88, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+Non-ASCII character '\xe2' in file /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_diquark_QCD_ccfg.py on line 5, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details (crab_diquark_QCD_ccfg.py, line 5)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-08-04 21:58:21.002 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab.log
+DEBUG 2020-08-04 21:59:55.098 UTC: 	 CRAB Client version: v3.200531
+DEBUG 2020-08-04 21:59:55.098 UTC: 	 Running on: Linux cmslpc156.fnal.gov 3.10.0-1127.10.1.el7.x86_64 #1 SMP Tue Jun 2 10:05:57 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-08-04 21:59:55.106 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-08-04 21:59:55.107 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-04 21:59:55.107 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-08-04 21:59:55.109 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-08-04 21:59:55.109 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-08-04 21:59:55.113 UTC: 	 Error while loading CRAB configuration:
+Non-ASCII character '\xe2' in file /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_diquark_QCD_ccfg.py on line 13, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details (crab_diquark_QCD_ccfg.py, line 13)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-08-04 21:59:55.113 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/SubCommand.py", line 319, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/SubCommand.py", line 88, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+Non-ASCII character '\xe2' in file /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_diquark_QCD_ccfg.py on line 13, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details (crab_diquark_QCD_ccfg.py, line 13)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-08-04 21:59:55.115 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab.log
+DEBUG 2020-08-04 22:03:04.647 UTC: 	 CRAB Client version: v3.200531
+DEBUG 2020-08-04 22:03:04.648 UTC: 	 Running on: Linux cmslpc156.fnal.gov 3.10.0-1127.10.1.el7.x86_64 #1 SMP Tue Jun 2 10:05:57 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-08-04 22:03:04.656 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-08-04 22:03:04.656 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-04 22:03:04.656 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-08-04 22:03:04.658 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-08-04 22:03:04.658 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-08-04 22:03:04.665 UTC: 	 Invalid CRAB configuration: In case of Automatic splitting, the Data.unitsPerJob parameter must be in the [180, 2700] minutes range. You asked for 1 minutes.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-08-04 22:03:04.665 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/SubCommand.py", line 319, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/SubCommand.py", line 93, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: In case of Automatic splitting, the Data.unitsPerJob parameter must be in the [180, 2700] minutes range. You asked for 1 minutes.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-08-04 22:03:04.667 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab.log
+DEBUG 2020-08-04 22:03:49.846 UTC: 	 CRAB Client version: v3.200531
+DEBUG 2020-08-04 22:03:49.846 UTC: 	 Running on: Linux cmslpc156.fnal.gov 3.10.0-1127.10.1.el7.x86_64 #1 SMP Tue Jun 2 10:05:57 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-08-04 22:03:49.854 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-08-04 22:03:49.854 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-04 22:03:49.855 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-08-04 22:03:49.856 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-08-04 22:03:49.856 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-08-04 22:03:49.864 UTC: 	 Invalid CRAB configuration: In case of Automatic splitting, the Data.unitsPerJob parameter must be in the [180, 2700] minutes range. You asked for 100 minutes.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-08-04 22:03:49.864 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/SubCommand.py", line 319, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/SubCommand.py", line 93, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: In case of Automatic splitting, the Data.unitsPerJob parameter must be in the [180, 2700] minutes range. You asked for 100 minutes.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-08-04 22:03:49.866 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab.log
+DEBUG 2020-08-04 22:05:14.626 UTC: 	 CRAB Client version: v3.200531
+DEBUG 2020-08-04 22:05:14.626 UTC: 	 Running on: Linux cmslpc156.fnal.gov 3.10.0-1127.10.1.el7.x86_64 #1 SMP Tue Jun 2 10:05:57 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-08-04 22:05:14.636 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-08-04 22:05:14.636 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-04 22:05:14.636 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-08-04 22:05:14.638 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-08-04 22:05:14.638 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-08-04 22:05:14.648 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-08-04 22:05:14.649 UTC: 	 Working area '/uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_01' already exists 
+Please change the requestName in the config file
+ERROR 2020-08-04 22:05:14.649 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/ClientUtilities.py", line 397, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_01' already exists 
+Please change the requestName in the config file
+INFO 2020-08-04 22:05:14.651 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab.log
+DEBUG 2020-08-04 23:39:29.246 UTC: 	 CRAB Client version: v3.200531
+DEBUG 2020-08-04 23:39:29.246 UTC: 	 Running on: Linux cmslpc156.fnal.gov 3.10.0-1127.10.1.el7.x86_64 #1 SMP Tue Jun 2 10:05:57 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-08-04 23:39:29.255 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-08-04 23:39:29.255 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-04 23:39:29.256 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-08-04 23:39:29.299 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-08-04 23:39:29.299 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-08-04 23:39:29.308 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-08-04 23:39:29.309 UTC: 	 Working area '/uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_01' already exists 
+Please change the requestName in the config file
+ERROR 2020-08-04 23:39:29.309 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/Commands/SubCommand.py", line 323, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200531.00/lib/CRABClient/ClientUtilities.py", line 397, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_01' already exists 
+Please change the requestName in the config file
+INFO 2020-08-04 23:39:29.311 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab.log
+DEBUG 2020-11-11 23:34:44.452 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-11-11 23:34:44.452 UTC: 	 Running on: Linux cmslpc135.fnal.gov 3.10.0-1127.18.2.el7.x86_64 #1 SMP Thu Jul 30 10:36:16 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-11-11 23:34:44.452 UTC: 	 Executing command: 'submit'
+DEBUG 2020-11-11 23:34:44.461 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-11-11 23:34:44.470 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-11-11 23:34:44.470 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-11-11 23:34:44.479 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-11-11 23:34:44.480 UTC: 	 Working area '/uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark__ttbar_QCD_background_0001' already exists 
+Please change the requestName in the config file
+ERROR 2020-11-11 23:34:44.480 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/ClientUtilities.py", line 397, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark__ttbar_QCD_background_0001' already exists 
+Please change the requestName in the config file
+INFO 2020-11-11 23:34:44.482 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab.log
+DEBUG 2020-11-12 05:59:41.265 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-11-12 05:59:41.265 UTC: 	 Running on: Linux cmslpc153.fnal.gov 3.10.0-1127.10.1.el7.x86_64 #1 SMP Tue Jun 2 10:05:57 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-11-12 05:59:41.265 UTC: 	 Executing command: 'checkusername'
+DEBUG 2020-11-12 05:59:41.266 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+DEBUG 2020-11-12 05:59:41.279 UTC: 	 Checking credentials
+DEBUG 2020-11-12 05:59:41.279 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-12 05:59:41.279 UTC: 	 Getting proxy life time left
+DEBUG 2020-11-12 05:59:41.383 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 20089
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 05:59:41.487 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 20088
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 05:59:41.487 UTC: 	 Proxy lifetime 20089 secs is different from voms extension lifetime 20088 secs for proxy: /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-12 05:59:41.487 UTC: 	 Proxy valid for 05:34:48 hours
+DEBUG 2020-11-12 05:59:41.487 UTC: 	 Command use: checkusername
+DEBUG 2020-11-12 05:59:41.487 UTC: 	 Options use: []
+DEBUG 2020-11-12 05:59:41.487 UTC: 	 Instance is None
+DEBUG 2020-11-12 05:59:41.487 UTC: 	 Server base url is None
+DEBUG 2020-11-12 05:59:41.487 UTC: 	 Retrieving username ...
+DEBUG 2020-11-12 05:59:41.487 UTC: 	 Retrieving username from CRIC...
+DEBUG 2020-11-12 05:59:44.533 UTC: 	 username is ecannaer
+INFO 2020-11-12 05:59:44.533 UTC: 	 Username is: ecannaer
+DEBUG 2020-11-12 22:55:05.098 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-12 22:55:05.098 UTC: 	 Running on: Linux cmslpc148.fnal.gov 3.10.0-1127.18.2.el7.x86_64 #1 SMP Thu Jul 30 10:36:16 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-11-12 22:55:05.098 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2020-11-12 22:55:05.098 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+DEBUG 2020-11-12 22:55:05.116 UTC: 	 Checking credentials
+DEBUG 2020-11-12 22:55:05.117 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-12 22:55:05.117 UTC: 	 Getting proxy life time left
+DEBUG 2020-11-12 22:55:05.219 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 42947
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 22:55:05.323 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 42947
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 22:55:05.323 UTC: 	 Proxy valid for 11:55:47 hours
+DEBUG 2020-11-12 22:55:05.426 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+ERROR 2020-11-12 22:55:05.426 UTC: 	 Error: Please specify the site where to check the write permissions. Use the --site option.
+ERROR 2020-11-12 22:55:05.426 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/checkwrite.py", line 21, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 368, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/checkwrite.py", line 282, in validateOptions
+    raise ex
+MissingOptionException: [91mError[0m: Please specify the site where to check the write permissions. Use the --site option.
+INFO 2020-11-12 22:55:05.429 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab.log
+DEBUG 2020-11-12 22:55:25.135 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-12 22:55:25.135 UTC: 	 Running on: Linux cmslpc148.fnal.gov 3.10.0-1127.18.2.el7.x86_64 #1 SMP Thu Jul 30 10:36:16 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-11-12 22:55:25.135 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2020-11-12 22:55:25.136 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+WARNING 2020-11-12 22:55:25.137 UTC: 	 Warning: 'crab checkwrite' command takes no arguments, 1 given. Ignoring arguments ['/store/users/ecannaer'].
+DEBUG 2020-11-12 22:55:25.141 UTC: 	 Checking credentials
+DEBUG 2020-11-12 22:55:25.141 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-12 22:55:25.141 UTC: 	 Getting proxy life time left
+DEBUG 2020-11-12 22:55:25.243 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 42927
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 22:55:25.346 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 42927
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 22:55:25.346 UTC: 	 Proxy valid for 11:55:27 hours
+DEBUG 2020-11-12 22:55:25.448 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+ERROR 2020-11-12 22:55:25.448 UTC: 	 Error: Please specify the site where to check the write permissions. Use the --site option.
+ERROR 2020-11-12 22:55:25.448 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/checkwrite.py", line 21, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 368, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/checkwrite.py", line 282, in validateOptions
+    raise ex
+MissingOptionException: [91mError[0m: Please specify the site where to check the write permissions. Use the --site option.
+INFO 2020-11-12 22:55:25.451 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab.log
+DEBUG 2020-11-12 22:55:41.426 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-12 22:55:41.426 UTC: 	 Running on: Linux cmslpc148.fnal.gov 3.10.0-1127.18.2.el7.x86_64 #1 SMP Thu Jul 30 10:36:16 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-11-12 22:55:41.426 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2020-11-12 22:55:41.427 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+DEBUG 2020-11-12 22:55:41.431 UTC: 	 Checking credentials
+DEBUG 2020-11-12 22:55:41.431 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-12 22:55:41.431 UTC: 	 Getting proxy life time left
+DEBUG 2020-11-12 22:55:41.533 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 42911
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 22:55:41.636 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 42911
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 22:55:41.636 UTC: 	 Proxy valid for 11:55:11 hours
+DEBUG 2020-11-12 22:55:41.738 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 22:55:41.739 UTC: 	 Command use: checkwrite
+DEBUG 2020-11-12 22:55:41.739 UTC: 	 Options use: ['--site', 'CERN']
+DEBUG 2020-11-12 22:55:41.739 UTC: 	 Instance is None
+DEBUG 2020-11-12 22:55:41.739 UTC: 	 Server base url is None
+DEBUG 2020-11-12 22:55:41.739 UTC: 	 Retrieving username ...
+DEBUG 2020-11-12 22:55:41.739 UTC: 	 Retrieving username from CRIC...
+DEBUG 2020-11-12 22:55:43.029 UTC: 	 username is ecannaer
+INFO 2020-11-12 22:55:43.029 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2020-11-12 22:55:43.029 UTC: 	 Validating LFN /store/user/ecannaer...
+INFO 2020-11-12 22:55:43.029 UTC: 	 LFN /store/user/ecannaer is valid.
+INFO 2020-11-12 22:55:43.063 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2020-11-12 22:55:43.064 UTC: 	 Will check write permission in /store/user/ecannaer on site CERN
+INFO 2020-11-12 22:55:49.711 UTC: 	 PFN lookup failed
+INFO 2020-11-12 22:55:49.712 UTC: 	   Stdout:
+    Failed to resolve LNF to PFN via Rucio. Error is:
+     RSE does not exist.
+    Details: RSE 'CERN' cannot be found in vo 'def'
+    
+DEBUG 2020-11-12 23:02:25.106 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-12 23:02:25.106 UTC: 	 Running on: Linux cmslpc148.fnal.gov 3.10.0-1127.18.2.el7.x86_64 #1 SMP Thu Jul 30 10:36:16 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-11-12 23:02:25.106 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2020-11-12 23:02:25.107 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+DEBUG 2020-11-12 23:02:25.114 UTC: 	 Checking credentials
+DEBUG 2020-11-12 23:02:25.115 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-12 23:02:25.115 UTC: 	 Getting proxy life time left
+DEBUG 2020-11-12 23:02:25.220 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 42507
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:02:25.325 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 42507
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:02:25.325 UTC: 	 Proxy valid for 11:48:27 hours
+DEBUG 2020-11-12 23:02:25.430 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:02:25.430 UTC: 	 Command use: checkwrite
+DEBUG 2020-11-12 23:02:25.431 UTC: 	 Options use: ['--site', 'CERN']
+DEBUG 2020-11-12 23:02:25.431 UTC: 	 Instance is None
+DEBUG 2020-11-12 23:02:25.431 UTC: 	 Server base url is None
+DEBUG 2020-11-12 23:02:25.431 UTC: 	 Retrieving username ...
+DEBUG 2020-11-12 23:02:25.431 UTC: 	 Retrieving username from CRIC...
+DEBUG 2020-11-12 23:02:26.701 UTC: 	 username is ecannaer
+INFO 2020-11-12 23:02:26.701 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2020-11-12 23:02:26.701 UTC: 	 Validating LFN /store/user/ecannaer...
+INFO 2020-11-12 23:02:26.701 UTC: 	 LFN /store/user/ecannaer is valid.
+INFO 2020-11-12 23:02:26.715 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2020-11-12 23:02:26.715 UTC: 	 Will check write permission in /store/user/ecannaer on site CERN
+INFO 2020-11-12 23:02:28.562 UTC: 	 PFN lookup failed
+INFO 2020-11-12 23:02:28.562 UTC: 	   Stdout:
+    Failed to resolve LNF to PFN via Rucio. Error is:
+     RSE does not exist.
+    Details: RSE 'CERN' cannot be found in vo 'def'
+    
+DEBUG 2020-11-12 23:07:25.078 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-12 23:07:25.078 UTC: 	 Running on: Linux cmslpc148.fnal.gov 3.10.0-1127.18.2.el7.x86_64 #1 SMP Thu Jul 30 10:36:16 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-11-12 23:07:25.078 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2020-11-12 23:07:25.079 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+DEBUG 2020-11-12 23:07:25.084 UTC: 	 Checking credentials
+DEBUG 2020-11-12 23:07:25.084 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-12 23:07:25.084 UTC: 	 Getting proxy life time left
+DEBUG 2020-11-12 23:07:25.186 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 42207
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:07:25.289 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 42207
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:07:25.289 UTC: 	 Proxy valid for 11:43:27 hours
+DEBUG 2020-11-12 23:07:25.392 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:07:25.392 UTC: 	 Command use: checkwrite
+DEBUG 2020-11-12 23:07:25.393 UTC: 	 Options use: ['--site', 'T0_CERN']
+DEBUG 2020-11-12 23:07:25.393 UTC: 	 Instance is None
+DEBUG 2020-11-12 23:07:25.393 UTC: 	 Server base url is None
+DEBUG 2020-11-12 23:07:25.393 UTC: 	 Retrieving username ...
+DEBUG 2020-11-12 23:07:25.393 UTC: 	 Retrieving username from CRIC...
+DEBUG 2020-11-12 23:07:26.684 UTC: 	 username is ecannaer
+INFO 2020-11-12 23:07:26.684 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2020-11-12 23:07:26.684 UTC: 	 Validating LFN /store/user/ecannaer...
+INFO 2020-11-12 23:07:26.684 UTC: 	 LFN /store/user/ecannaer is valid.
+INFO 2020-11-12 23:07:26.692 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2020-11-12 23:07:26.693 UTC: 	 Will check write permission in /store/user/ecannaer on site T0_CERN
+INFO 2020-11-12 23:07:28.646 UTC: 	 PFN lookup failed
+INFO 2020-11-12 23:07:28.646 UTC: 	   Stdout:
+    Failed to resolve LNF to PFN via Rucio. Error is:
+     RSE does not exist.
+    Details: RSE 'T0_CERN' cannot be found in vo 'def'
+    
+DEBUG 2020-11-12 23:12:59.043 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-12 23:12:59.043 UTC: 	 Running on: Linux cmslpc148.fnal.gov 3.10.0-1127.18.2.el7.x86_64 #1 SMP Thu Jul 30 10:36:16 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-11-12 23:12:59.043 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2020-11-12 23:12:59.044 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+DEBUG 2020-11-12 23:12:59.050 UTC: 	 Checking credentials
+DEBUG 2020-11-12 23:12:59.050 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-12 23:12:59.050 UTC: 	 Getting proxy life time left
+DEBUG 2020-11-12 23:12:59.153 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 41873
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:12:59.256 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 41873
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:12:59.256 UTC: 	 Proxy valid for 11:37:53 hours
+DEBUG 2020-11-12 23:12:59.359 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:12:59.360 UTC: 	 Command use: checkwrite
+DEBUG 2020-11-12 23:12:59.360 UTC: 	 Options use: ['--site', 'T0_CH_CERN']
+DEBUG 2020-11-12 23:12:59.360 UTC: 	 Instance is None
+DEBUG 2020-11-12 23:12:59.360 UTC: 	 Server base url is None
+DEBUG 2020-11-12 23:12:59.360 UTC: 	 Retrieving username ...
+DEBUG 2020-11-12 23:12:59.360 UTC: 	 Retrieving username from CRIC...
+DEBUG 2020-11-12 23:13:00.674 UTC: 	 username is ecannaer
+INFO 2020-11-12 23:13:00.674 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2020-11-12 23:13:00.674 UTC: 	 Validating LFN /store/user/ecannaer...
+INFO 2020-11-12 23:13:00.674 UTC: 	 LFN /store/user/ecannaer is valid.
+INFO 2020-11-12 23:13:00.683 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2020-11-12 23:13:00.684 UTC: 	 Will check write permission in /store/user/ecannaer on site T0_CH_CERN
+INFO 2020-11-12 23:13:02.671 UTC: 	 PFN lookup failed
+INFO 2020-11-12 23:13:02.672 UTC: 	   Stdout:
+    Failed to resolve LNF to PFN via Rucio. Error is:
+     RSE does not exist.
+    Details: RSE 'T0_CH_CERN' cannot be found in vo 'def'
+    
+DEBUG 2020-11-12 23:13:42.376 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-12 23:13:42.376 UTC: 	 Running on: Linux cmslpc148.fnal.gov 3.10.0-1127.18.2.el7.x86_64 #1 SMP Thu Jul 30 10:36:16 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-11-12 23:13:42.376 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2020-11-12 23:13:42.376 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+DEBUG 2020-11-12 23:13:42.383 UTC: 	 Checking credentials
+DEBUG 2020-11-12 23:13:42.383 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-12 23:13:42.383 UTC: 	 Getting proxy life time left
+DEBUG 2020-11-12 23:13:42.487 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 41830
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:13:42.591 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 41830
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:13:42.591 UTC: 	 Proxy valid for 11:37:10 hours
+DEBUG 2020-11-12 23:13:42.695 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:13:42.695 UTC: 	 Command use: checkwrite
+DEBUG 2020-11-12 23:13:42.695 UTC: 	 Options use: ['--site', 'T1_US_FNAL']
+DEBUG 2020-11-12 23:13:42.695 UTC: 	 Instance is None
+DEBUG 2020-11-12 23:13:42.696 UTC: 	 Server base url is None
+DEBUG 2020-11-12 23:13:42.696 UTC: 	 Retrieving username ...
+DEBUG 2020-11-12 23:13:42.696 UTC: 	 Retrieving username from CRIC...
+DEBUG 2020-11-12 23:13:43.970 UTC: 	 username is ecannaer
+INFO 2020-11-12 23:13:43.971 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2020-11-12 23:13:43.971 UTC: 	 Validating LFN /store/user/ecannaer...
+INFO 2020-11-12 23:13:43.971 UTC: 	 LFN /store/user/ecannaer is valid.
+INFO 2020-11-12 23:13:43.978 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2020-11-12 23:13:43.978 UTC: 	 Will check write permission in /store/user/ecannaer on site T1_US_FNAL
+INFO 2020-11-12 23:13:45.566 UTC: 	 PFN lookup failed
+INFO 2020-11-12 23:13:45.566 UTC: 	   Stdout:
+    Failed to resolve LNF to PFN via Rucio. Error is:
+     RSE does not exist.
+    Details: RSE 'T1_US_FNAL' cannot be found in vo 'def'
+    
+DEBUG 2020-11-12 23:13:55.894 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-12 23:13:55.895 UTC: 	 Running on: Linux cmslpc148.fnal.gov 3.10.0-1127.18.2.el7.x86_64 #1 SMP Thu Jul 30 10:36:16 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-11-12 23:13:55.895 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2020-11-12 23:13:55.895 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+DEBUG 2020-11-12 23:13:55.899 UTC: 	 Checking credentials
+DEBUG 2020-11-12 23:13:55.900 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-12 23:13:55.900 UTC: 	 Getting proxy life time left
+DEBUG 2020-11-12 23:13:56.003 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 41817
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:13:56.108 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 41816
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:13:56.108 UTC: 	 Proxy lifetime 41817 secs is different from voms extension lifetime 41816 secs for proxy: /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-12 23:13:56.108 UTC: 	 Proxy valid for 11:36:56 hours
+DEBUG 2020-11-12 23:13:56.211 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:13:56.211 UTC: 	 Command use: checkwrite
+DEBUG 2020-11-12 23:13:56.211 UTC: 	 Options use: ['--site', 'T1_US_FNAL_Disk']
+DEBUG 2020-11-12 23:13:56.211 UTC: 	 Instance is None
+DEBUG 2020-11-12 23:13:56.211 UTC: 	 Server base url is None
+DEBUG 2020-11-12 23:13:56.211 UTC: 	 Retrieving username ...
+DEBUG 2020-11-12 23:13:56.211 UTC: 	 Retrieving username from CRIC...
+DEBUG 2020-11-12 23:13:57.321 UTC: 	 username is ecannaer
+INFO 2020-11-12 23:13:57.321 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2020-11-12 23:13:57.321 UTC: 	 Validating LFN /store/user/ecannaer...
+INFO 2020-11-12 23:13:57.321 UTC: 	 LFN /store/user/ecannaer is valid.
+INFO 2020-11-12 23:13:57.327 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2020-11-12 23:13:57.328 UTC: 	 Will check write permission in /store/user/ecannaer on site T1_US_FNAL_Disk
+INFO 2020-11-12 23:13:59.176 UTC: 	 Will use PFN: srm://cmsdcadisk.fnal.gov:8443/srm/managerv2?SFN=/dcache/uscmsdisk/store/user/ecannaer/crab3checkwrite_20201112_171357/crab3checkwrite_20201112_171357.tmp
+INFO 2020-11-12 23:13:59.176 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20201112_171357 and copy (dummy) file crab3checkwrite_20201112_171357.tmp to /store/user/ecannaer
+
+INFO 2020-11-12 23:13:59.181 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab3checkwrite_20201112_171357.tmp 'srm://cmsdcadisk.fnal.gov:8443/srm/managerv2?SFN=/dcache/uscmsdisk/store/user/ecannaer/crab3checkwrite_20201112_171357/crab3checkwrite_20201112_171357.tmp'
+INFO 2020-11-12 23:13:59.181 UTC: 	 Please wait...
+INFO 2020-11-12 23:14:00.655 UTC: 	 Failed running copy command
+INFO 2020-11-12 23:14:00.655 UTC: 	   Stdout:
+    Copying 85 bytes file:///uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab3checkwrite_20201112_171357.tmp => srm://cmsdcadisk.fnal.gov:8443/srm/managerv2?SFN=/dcache/uscmsdisk/store/user/ecannaer/crab3checkwrite_20201112_171357/crab3checkwrite_20201112_171357.tmp
+    event: [1605222840618] BOTH   GFAL2:CORE:COPY	LIST:ENTER	
+    event: [1605222840618] BOTH   GFAL2:CORE:COPY	LIST:ITEM	file:///uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab3checkwrite_20201112_171357.tmp => srm://cmsdcadisk.fnal.gov:8443/srm/managerv2?SFN=/dcache/uscmsdisk/store/user/ecannaer/crab3checkwrite_20201112_171357/crab3checkwrite_20201112_171357.tmp
+    event: [1605222840618] BOTH   GFAL2:CORE:COPY	LIST:EXIT	
+    event: [1605222840621] BOTH   SRM	PREPARE:ENTER	
+    
+INFO 2020-11-12 23:14:00.655 UTC: 	   Stderr:
+    WARNING Transfer failed with: DESTINATION MAKE_PARENT srm-ifce err: Permission denied, err: [SE][Mkdir][SRM_AUTHORIZATION_FAILURE] httpg://cmsdcadisk.fnal.gov:8443/srm/managerv2: srm://cmsdcadisk.fnal.gov/dcache/uscmsdisk/store/user/ecannaer/crab3checkwrite_20201112_171357: Permission denied
+    
+    gfal-copy error: 13 (Permission denied) - DESTINATION MAKE_PARENT srm-ifce err: Permission denied, err: [SE][Mkdir][SRM_AUTHORIZATION_FAILURE] httpg://cmsdcadisk.fnal.gov:8443/srm/managerv2: srm://cmsdcadisk.fnal.gov/dcache/uscmsdisk/store/user/ecannaer/crab3checkwrite_20201112_171357: Permission denied
+    
+    
+INFO 2020-11-12 23:14:00.656 UTC: 	 
+Checkwrite Result:
+INFO 2020-11-12 23:14:00.657 UTC: 	 Error: Unable to write in /store/user/ecannaer on site T1_US_FNAL_Disk
+       You may want to contact the site administrators sending them the 'crab checkwrite' output as printed above.
+INFO 2020-11-12 23:14:00.657 UTC: 	 Note: You cannot write to a site if you did not ask permission.
+DEBUG 2020-11-12 23:38:55.244 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-12 23:38:55.245 UTC: 	 Running on: Linux cmslpc148.fnal.gov 3.10.0-1127.18.2.el7.x86_64 #1 SMP Thu Jul 30 10:36:16 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-11-12 23:38:55.245 UTC: 	 Executing command: 'checkwrite'
+DEBUG 2020-11-12 23:38:55.245 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+DEBUG 2020-11-12 23:38:55.252 UTC: 	 Checking credentials
+DEBUG 2020-11-12 23:38:55.253 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-12 23:38:55.253 UTC: 	 Getting proxy life time left
+DEBUG 2020-11-12 23:38:55.357 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 40317
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:38:55.461 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 40317
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:38:55.461 UTC: 	 Proxy valid for 11:11:57 hours
+DEBUG 2020-11-12 23:38:55.565 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:38:55.566 UTC: 	 Command use: checkwrite
+DEBUG 2020-11-12 23:38:55.566 UTC: 	 Options use: ['--site', 'T3_US_FNALLPC']
+DEBUG 2020-11-12 23:38:55.566 UTC: 	 Instance is None
+DEBUG 2020-11-12 23:38:55.566 UTC: 	 Server base url is None
+DEBUG 2020-11-12 23:38:55.566 UTC: 	 Retrieving username ...
+DEBUG 2020-11-12 23:38:55.566 UTC: 	 Retrieving username from CRIC...
+DEBUG 2020-11-12 23:38:56.987 UTC: 	 username is ecannaer
+INFO 2020-11-12 23:38:56.987 UTC: 	 Will check write permission in the default location /store/user/<username>
+INFO 2020-11-12 23:38:56.987 UTC: 	 Validating LFN /store/user/ecannaer...
+INFO 2020-11-12 23:38:56.988 UTC: 	 LFN /store/user/ecannaer is valid.
+INFO 2020-11-12 23:38:56.996 UTC: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2020-11-12 23:38:56.996 UTC: 	 Will check write permission in /store/user/ecannaer on site T3_US_FNALLPC
+INFO 2020-11-12 23:38:58.800 UTC: 	 Will use PFN: gsiftp://cmseos-gridftp.fnal.gov:2811/eos/uscms/store/user/ecannaer/crab3checkwrite_20201112_173856/crab3checkwrite_20201112_173856.tmp
+INFO 2020-11-12 23:38:58.801 UTC: 	 
+Attempting to create (dummy) directory crab3checkwrite_20201112_173856 and copy (dummy) file crab3checkwrite_20201112_173856.tmp to /store/user/ecannaer
+
+INFO 2020-11-12 23:38:58.804 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab3checkwrite_20201112_173856.tmp 'gsiftp://cmseos-gridftp.fnal.gov:2811/eos/uscms/store/user/ecannaer/crab3checkwrite_20201112_173856/crab3checkwrite_20201112_173856.tmp'
+INFO 2020-11-12 23:38:58.806 UTC: 	 Please wait...
+INFO 2020-11-12 23:38:59.253 UTC: 	 
+Successfully created directory crab3checkwrite_20201112_173856 and copied file crab3checkwrite_20201112_173856.tmp to /store/user/ecannaer
+INFO 2020-11-12 23:38:59.253 UTC: 	 
+Attempting to delete file gsiftp://cmseos-gridftp.fnal.gov:2811/eos/uscms/store/user/ecannaer/crab3checkwrite_20201112_173856/crab3checkwrite_20201112_173856.tmp
+
+INFO 2020-11-12 23:38:59.253 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -v -t 180 'gsiftp://cmseos-gridftp.fnal.gov:2811/eos/uscms/store/user/ecannaer/crab3checkwrite_20201112_173856/crab3checkwrite_20201112_173856.tmp'
+INFO 2020-11-12 23:38:59.253 UTC: 	 Please wait...
+INFO 2020-11-12 23:38:59.642 UTC: 	 
+Successfully deleted file gsiftp://cmseos-gridftp.fnal.gov:2811/eos/uscms/store/user/ecannaer/crab3checkwrite_20201112_173856/crab3checkwrite_20201112_173856.tmp
+INFO 2020-11-12 23:38:59.642 UTC: 	 
+Attempting to delete directory gsiftp://cmseos-gridftp.fnal.gov:2811/eos/uscms/store/user/ecannaer/crab3checkwrite_20201112_173856/
+
+INFO 2020-11-12 23:38:59.643 UTC: 	 Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -r -v -t 180 'gsiftp://cmseos-gridftp.fnal.gov:2811/eos/uscms/store/user/ecannaer/crab3checkwrite_20201112_173856/'
+INFO 2020-11-12 23:38:59.643 UTC: 	 Please wait...
+INFO 2020-11-12 23:39:00.027 UTC: 	 
+Successfully deleted directory gsiftp://cmseos-gridftp.fnal.gov:2811/eos/uscms/store/user/ecannaer/crab3checkwrite_20201112_173856/
+INFO 2020-11-12 23:39:00.029 UTC: 	 
+Checkwrite Result:
+INFO 2020-11-12 23:39:00.029 UTC: 	 Success: Able to write in /store/user/ecannaer on site T3_US_FNALLPC
+DEBUG 2020-11-12 23:42:01.244 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-12 23:42:01.245 UTC: 	 Running on: Linux cmslpc148.fnal.gov 3.10.0-1127.18.2.el7.x86_64 #1 SMP Thu Jul 30 10:36:16 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-11-12 23:42:01.245 UTC: 	 Executing command: 'checkusername'
+DEBUG 2020-11-12 23:42:01.245 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+DEBUG 2020-11-12 23:42:01.252 UTC: 	 Checking credentials
+DEBUG 2020-11-12 23:42:01.253 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-12 23:42:01.253 UTC: 	 Getting proxy life time left
+DEBUG 2020-11-12 23:42:01.357 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 40131
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:42:01.461 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 40131
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-12 23:42:01.462 UTC: 	 Proxy valid for 11:08:51 hours
+DEBUG 2020-11-12 23:42:01.462 UTC: 	 Command use: checkusername
+DEBUG 2020-11-12 23:42:01.462 UTC: 	 Options use: []
+DEBUG 2020-11-12 23:42:01.462 UTC: 	 Instance is None
+DEBUG 2020-11-12 23:42:01.462 UTC: 	 Server base url is None
+DEBUG 2020-11-12 23:42:01.462 UTC: 	 Retrieving username ...
+DEBUG 2020-11-12 23:42:01.462 UTC: 	 Retrieving username from CRIC...
+DEBUG 2020-11-12 23:42:04.153 UTC: 	 username is ecannaer
+INFO 2020-11-12 23:42:04.154 UTC: 	 Username is: ecannaer
+DEBUG 2020-11-16 22:51:30.120 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-16 22:51:30.120 UTC: 	 Running on: Linux cmslpc160.fnal.gov 3.10.0-1127.el7.x86_64 #1 SMP Wed Apr 1 12:25:50 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-11-16 22:51:30.120 UTC: 	 Executing command: 'submit'
+DEBUG 2020-11-16 22:51:30.121 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-11-16 22:51:30.139 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-11-16 22:51:30.139 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-11-16 22:51:30.161 UTC: 	 Error while loading CRAB configuration:
+invalid syntax (crab_diquark_QCD_ccfg.py, line 1)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-11-16 22:51:30.161 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 312, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 90, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+invalid syntax (crab_diquark_QCD_ccfg.py, line 1)
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-11-16 22:51:30.163 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab.log
+DEBUG 2020-12-01 00:57:57.357 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-12-01 00:57:57.357 UTC: 	 Running on: Linux cmslpc130.fnal.gov 3.10.0-1127.19.1.el7.x86_64 #1 SMP Thu Aug 20 14:39:03 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2020-12-01 00:57:57.357 UTC: 	 Executing command: 'submit'
+DEBUG 2020-12-01 00:57:57.357 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-12-01 00:57:57.364 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-12-01 00:57:57.364 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-12-01 00:57:57.373 UTC: 	 Invalid CRAB configuration: In case of Automatic splitting, the Data.unitsPerJob parameter must be in the [180, 2700] minutes range. You asked for 10 minutes.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-12-01 00:57:57.373 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 312, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 95, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: In case of Automatic splitting, the Data.unitsPerJob parameter must be in the [180, 2700] minutes range. You asked for 10 minutes.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-12-01 00:57:57.375 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab.log
+DEBUG 2020-12-01 01:17:00.440 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-12-01 01:17:00.440 UTC: 	 Running on: Linux cmslpc130.fnal.gov 3.10.0-1127.19.1.el7.x86_64 #1 SMP Thu Aug 20 14:39:03 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2020-12-01 01:17:00.440 UTC: 	 Executing command: 'submit'
+DEBUG 2020-12-01 01:17:00.441 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-12-01 01:17:00.444 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-12-01 01:17:00.444 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-12-01 01:17:00.455 UTC: 	 Error while loading CRAB configuration:
+'Configuration' object has no attribute 'data'
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-12-01 01:17:00.455 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 312, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 90, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+'Configuration' object has no attribute 'data'
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-12-01 01:17:00.457 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab.log
+DEBUG 2020-12-01 01:19:59.952 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-12-01 01:19:59.953 UTC: 	 Running on: Linux cmslpc130.fnal.gov 3.10.0-1127.19.1.el7.x86_64 #1 SMP Thu Aug 20 14:39:03 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2020-12-01 01:19:59.953 UTC: 	 Executing command: 'submit'
+DEBUG 2020-12-01 01:19:59.953 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-12-01 01:19:59.958 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-12-01 01:19:59.958 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-12-01 01:19:59.967 UTC: 	 Error while loading CRAB configuration:
+name 'c' is not defined
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-12-01 01:19:59.967 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 312, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 90, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+name 'c' is not defined
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-12-01 01:19:59.969 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab.log
+DEBUG 2020-12-01 04:03:20.166 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-12-01 04:03:20.167 UTC: 	 Running on: Linux cmslpc112.fnal.gov 3.10.0-1127.19.1.el7.x86_64 #1 SMP Thu Aug 20 14:39:03 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2020-12-01 04:03:20.167 UTC: 	 Executing command: 'status'
+DEBUG 2020-12-01 04:03:20.167 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+DEBUG 2020-12-01 04:03:32.313 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-12-01 04:03:32.313 UTC: 	 Running on: Linux cmslpc112.fnal.gov 3.10.0-1127.19.1.el7.x86_64 #1 SMP Thu Aug 20 14:39:03 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2020-12-01 04:03:32.313 UTC: 	 Executing command: 'status'
+DEBUG 2020-12-01 04:03:32.314 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+DEBUG 2020-12-01 04:03:51.750 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-12-01 04:03:51.750 UTC: 	 Running on: Linux cmslpc112.fnal.gov 3.10.0-1127.19.1.el7.x86_64 #1 SMP Thu Aug 20 14:39:03 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2020-12-01 04:03:51.750 UTC: 	 Executing command: 'status'
+DEBUG 2020-12-01 04:03:51.751 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+ERROR 2020-12-01 04:03:51.752 UTC: 	 Error: -verboseErrors is not a valid CRAB project directory.
+ERROR 2020-12-01 04:03:51.753 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/status.py", line 41, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 271, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 628, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: -verboseErrors is not a valid CRAB project directory.
+INFO 2020-12-01 04:03:51.754 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab.log
+DEBUG 2020-12-01 20:15:30.408 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-12-01 20:15:30.408 UTC: 	 Running on: Linux cmslpc114.fnal.gov 3.10.0-1160.6.1.el7.x86_64 #1 SMP Tue Nov 10 08:19:23 CST 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2020-12-01 20:15:30.408 UTC: 	 Executing command: 'status'
+DEBUG 2020-12-01 20:15:30.409 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+ERROR 2020-12-01 20:15:30.412 UTC: 	 Error: crab_projects/crab_diquark_QCD_background_1500to2000_MC_0001 is not a valid CRAB project directory.
+ERROR 2020-12-01 20:15:30.412 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/status.py", line 41, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 271, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.201110.00/lib/CRABClient/Commands/SubCommand.py", line 628, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_projects/crab_diquark_QCD_background_1500to2000_MC_0001 is not a valid CRAB project directory.
+INFO 2020-12-01 20:15:30.414 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab.log

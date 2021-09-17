@@ -1,0 +1,4 @@
+DEBUG 2021-04-09 08:16:25.599 UTC: 	 CRAB Client version: v3.210127
+DEBUG 2021-04-09 08:16:25.599 UTC: 	 Running on: Linux cmslpc101.fnal.gov 3.10.0-1160.15.2.el7.x86_64 #1 SMP Tue Feb 2 08:13:55 CST 2021 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2021-04-09 08:16:25.599 UTC: 	 Executing command: 'resubmit'
+DEBUG 2021-04-09 08:16:25.600 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3

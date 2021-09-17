@@ -1,0 +1,6 @@
+pluginanalyzersanalyzers.so diquarkAnalyzer CMS%EDM%Framework%Module
+pluginanalyzersanalyzers.so diquarkAnalyzer CMS%EDM%Framework%ParameterSet%Description
+pluginanalyzersanalyzers.so diquarkAnalyzerBR CMS%EDM%Framework%Module
+pluginanalyzersanalyzers.so diquarkAnalyzerBR CMS%EDM%Framework%ParameterSet%Description
+pluginanalyzersanalyzers.so ttbarAnalyzer CMS%EDM%Framework%Module
+pluginanalyzersanalyzers.so ttbarAnalyzer CMS%EDM%Framework%ParameterSet%Description

@@ -1,0 +1,2 @@
+ALL_PACKAGES += src/crab_jetboost_background1
+subdirs_src_src_crab_jetboost_background1 := src_src_crab_jetboost_background1_inputs

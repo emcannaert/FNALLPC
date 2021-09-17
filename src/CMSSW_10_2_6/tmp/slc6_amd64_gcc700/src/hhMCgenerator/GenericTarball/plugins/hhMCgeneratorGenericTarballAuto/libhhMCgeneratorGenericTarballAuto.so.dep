@@ -1,0 +1,3 @@
+tmp/slc6_amd64_gcc700/src/hhMCgenerator/GenericTarball/plugins/hhMCgeneratorGenericTarballAuto/GenericTarball.cc.o: \
+ src/hhMCgenerator/GenericTarball/plugins/GenericTarball.cc \
+

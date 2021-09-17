@@ -1,0 +1,137 @@
+DEBUG 2020-09-08 15:43:05.065 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-09-08 15:43:05.065 UTC: 	 Running on: Linux cmslpc179.fnal.gov 3.10.0-1127.18.2.el7.x86_64 #1 SMP Thu Jul 30 10:36:16 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-09-08 15:43:05.065 UTC: 	 Executing command: 'submit'
+DEBUG 2020-09-08 15:43:05.066 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-09-08 15:43:05.075 UTC: 	 Will use CRAB configuration file ttbarAnalyzer_cfg.py
+DEBUG 2020-09-08 15:43:05.075 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-09-08 15:43:08.381 UTC: 	 Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/cannaert/src/thrust/CMSSW_10_2_4_patch1/src/ttbarAnalyzer_cfg.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-09-08 15:43:08.381 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 88, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/cannaert/src/thrust/CMSSW_10_2_4_patch1/src/ttbarAnalyzer_cfg.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-09-08 15:43:08.413 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_2_4_patch1/src/crab.log
+DEBUG 2020-09-09 05:25:16.902 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-09-09 05:25:16.902 UTC: 	 Running on: Linux cmslpc140.fnal.gov 3.10.0-1127.10.1.el7.x86_64 #1 SMP Tue Jun 2 10:05:57 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-09-09 05:25:16.902 UTC: 	 Executing command: 'submit'
+DEBUG 2020-09-09 05:25:16.912 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-09-09 05:25:16.921 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-09-09 05:25:16.921 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-09-09 05:25:17.387 UTC: 	 Invalid CRAB configuration: Parameter Data.unitsPerJob is mandatory for 'FileBased' splitting mode.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-09-09 05:25:17.387 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 93, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: Parameter Data.unitsPerJob is mandatory for 'FileBased' splitting mode.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-09-09 05:25:17.389 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_2_4_patch1/src/crab.log
+DEBUG 2020-09-09 06:17:19.773 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-09-09 06:17:19.773 UTC: 	 Running on: Linux cmslpc140.fnal.gov 3.10.0-1127.10.1.el7.x86_64 #1 SMP Tue Jun 2 10:05:57 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-09-09 06:17:19.773 UTC: 	 Executing command: 'submit'
+DEBUG 2020-09-09 06:17:19.774 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-09-09 06:17:19.784 UTC: 	 Will use CRAB configuration file ttbarAnalyzer_cfg.py
+DEBUG 2020-09-09 06:17:19.784 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-09-09 06:17:20.206 UTC: 	 Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/cannaert/src/thrust/CMSSW_10_2_4_patch1/src/ttbarAnalyzer_cfg.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-09-09 06:17:20.207 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 88, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/cannaert/src/thrust/CMSSW_10_2_4_patch1/src/ttbarAnalyzer_cfg.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2020-09-09 06:17:20.209 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_2_4_patch1/src/crab.log
+DEBUG 2020-09-23 01:03:40.070 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-09-23 01:03:40.070 UTC: 	 Running on: Linux cmslpc103.fnal.gov 3.10.0-1127.18.2.el7.x86_64 #1 SMP Thu Jul 30 10:36:16 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-09-23 01:03:40.070 UTC: 	 Executing command: 'submit'
+DEBUG 2020-09-23 01:03:40.072 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-09-23 01:03:40.074 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-09-23 01:03:40.074 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-09-23 01:03:40.076 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-09-23 01:03:40.076 UTC: 	 Working area '/uscms_data/d3/cannaert/src/thrust/CMSSW_10_2_4_patch1/src/crab_projects/crab_semilept_ttbar_QCD_background_10' already exists 
+Please change the requestName in the config file
+ERROR 2020-09-23 01:03:40.076 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/ClientUtilities.py", line 397, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/cannaert/src/thrust/CMSSW_10_2_4_patch1/src/crab_projects/crab_semilept_ttbar_QCD_background_10' already exists 
+Please change the requestName in the config file
+INFO 2020-09-23 01:03:40.078 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_2_4_patch1/src/crab.log
+DEBUG 2020-10-05 20:22:41.134 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-10-05 20:22:41.134 UTC: 	 Running on: Linux cmslpc173.fnal.gov 3.10.0-1127.13.1.el7.x86_64 #1 SMP Tue Jun 23 10:32:27 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-10-05 20:22:41.134 UTC: 	 Executing command: 'submit'
+DEBUG 2020-10-05 20:22:41.135 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-10-05 20:22:41.143 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_2_ccfg.py
+DEBUG 2020-10-05 20:22:41.144 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-10-05 20:22:41.160 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-10-05 20:22:41.160 UTC: 	 Working area '/uscms_data/d3/cannaert/src/thrust/CMSSW_10_2_4_patch1/src/crab_projects/crab_semilept_ttbar_QCD_background_data_004' already exists 
+Please change the requestName in the config file
+ERROR 2020-10-05 20:22:41.160 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/bin/crab", line 150, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/Commands/SubCommand.py", line 315, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200812.00/lib/CRABClient/ClientUtilities.py", line 397, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/cannaert/src/thrust/CMSSW_10_2_4_patch1/src/crab_projects/crab_semilept_ttbar_QCD_background_data_004' already exists 
+Please change the requestName in the config file
+INFO 2020-10-05 20:22:41.163 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_2_4_patch1/src/crab.log

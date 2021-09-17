@@ -1,0 +1,4 @@
+
+/bin/rm -f src/Configuration/GenProduction/python/__init__.py src/Configuration/GenProduction/python/__init__.pyc
+/bin/rm -rf tmp/slc6_amd64_gcc700/edmplugins/poison/Configuration/GenProduction
+/bin/touch tmp/common/cache/packs/changed

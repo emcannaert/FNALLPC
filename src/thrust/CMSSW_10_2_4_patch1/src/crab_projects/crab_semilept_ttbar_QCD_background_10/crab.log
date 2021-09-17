@@ -1,0 +1,32 @@
+DEBUG 2020-09-23 01:03:33.067 UTC: 	 CRAB Client version: v3.200812
+DEBUG 2020-09-23 01:03:33.068 UTC: 	 Running on: Linux cmslpc103.fnal.gov 3.10.0-1127.18.2.el7.x86_64 #1 SMP Thu Jul 30 10:36:16 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-09-23 01:03:33.068 UTC: 	 Executing command: 'submit'
+DEBUG 2020-09-23 01:03:33.069 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-09-23 01:03:33.078 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-09-23 01:03:33.078 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-09-23 01:03:33.099 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2020-09-23 01:03:33.146 UTC: 	 Checking credentials
+DEBUG 2020-09-23 01:03:33.146 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-09-23 01:03:33.147 UTC: 	 Getting proxy life time left
+DEBUG 2020-09-23 01:03:33.252 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 42369
+
+ error: 
+ retcode : 0
+DEBUG 2020-09-23 01:03:33.357 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 42368
+
+ error: 
+ retcode : 0
+DEBUG 2020-09-23 01:03:33.357 UTC: 	 Proxy lifetime 42369 secs is different from voms extension lifetime 42368 secs for proxy: /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-09-23 01:03:33.357 UTC: 	 Proxy valid for 11:46:08 hours
+DEBUG 2020-09-23 01:03:33.463 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+ERROR 2020-09-23 01:03:34.054 UTC: 	 Keyboard Interrupted
+INFO 2020-09-23 01:03:34.057 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_2_4_patch1/src/crab_projects/crab_semilept_ttbar_QCD_background_10/crab.log

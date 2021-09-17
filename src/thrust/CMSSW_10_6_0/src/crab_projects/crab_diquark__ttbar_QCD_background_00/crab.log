@@ -1,0 +1,200 @@
+DEBUG 2020-08-18 21:57:19.050 UTC: 	 CRAB Client version: v3.200719
+DEBUG 2020-08-18 21:57:19.051 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1127.10.1.el7.x86_64 #1 SMP Tue Jun 2 10:05:57 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.8 (Nitrogen)
+DEBUG 2020-08-18 21:57:19.658 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-08-18 21:57:19.658 UTC: 	 Executing command: 'submit'
+DEBUG 2020-08-18 21:57:19.680 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-08-18 21:57:19.754 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-08-18 21:57:19.754 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-08-18 21:57:20.032 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2020-08-18 21:57:20.321 UTC: 	 Checking credentials
+DEBUG 2020-08-18 21:57:20.328 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-08-18 21:57:20.328 UTC: 	 Getting proxy life time left
+DEBUG 2020-08-18 21:57:20.995 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 43156
+
+ error: 
+ retcode : 0
+DEBUG 2020-08-18 21:57:21.664 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 43155
+
+ error: 
+ retcode : 0
+DEBUG 2020-08-18 21:57:21.664 UTC: 	 Proxy lifetime 43156 secs is different from voms extension lifetime 43155 secs for proxy: /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-08-18 21:57:21.664 UTC: 	 Proxy valid for 11:59:15 hours
+DEBUG 2020-08-18 21:57:22.368 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2020-08-18 21:57:23.071 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+DEBUG 2020-08-18 21:57:23.406 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+
+ error: 
+ retcode : 0
+DEBUG 2020-08-18 21:57:23.406 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2020-08-18 21:57:23.406 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert_cmsweb.cern.ch for credential name
+DEBUG 2020-08-18 21:57:26.212 UTC: 	 Executing : 
+ command : myproxy-info -l dfb5f39d91e4adee325d1dda7edfeb9d4bdd1a42 -s myproxy.cern.ch
+ output : username: dfb5f39d91e4adee325d1dda7edfeb9d4bdd1a42
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 44:15:44  (1.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2020-08-18 21:57:26.213 UTC: 	 Myproxy is valid: 159344
+DEBUG 2020-08-18 21:57:26.675 UTC: 	 Executing : 
+ command : openssl x509 -noout -in ~/.globus/usercert.pem -dates
+ output : notBefore=Sep 25 21:29:38 2019 GMT
+notAfter=Oct 29 21:29:38 2020 GMT
+
+ error: 
+ retcode : 0
+DEBUG 2020-08-18 21:57:26.997 UTC: 	 Delegating a myproxy for 720:00 hours
+DEBUG 2020-08-18 21:57:26.998 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert_cmsweb.cern.ch for credential name
+DEBUG 2020-08-18 21:57:44.025 UTC: 	 Executing : 
+ command : export GT_PROXY_MODE=rfc ; myproxy-init -d -n -s myproxy.cern.ch -x -R '/DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch' -x -Z '/DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch' -l 'dfb5f39d91e4adee325d1dda7edfeb9d4bdd1a42' -t 168:00 -c 720:00
+ output : Your identity: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+Creating proxy ......................................................................... Done
+Proxy Verify OK
+Your proxy is valid until: Thu Sep 17 16:57:42 2020
+A proxy valid for 720 hours (30.0 days) for user dfb5f39d91e4adee325d1dda7edfeb9d4bdd1a42 now exists on myproxy.cern.ch.
+
+ error: 
+ retcode : 0
+DEBUG 2020-08-18 21:57:44.025 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert_cmsweb.cern.ch for credential name
+DEBUG 2020-08-18 21:57:46.223 UTC: 	 Executing : 
+ command : myproxy-info -l dfb5f39d91e4adee325d1dda7edfeb9d4bdd1a42 -s myproxy.cern.ch
+ output : username: dfb5f39d91e4adee325d1dda7edfeb9d4bdd1a42
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 719:59:56  (30.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2020-08-18 21:57:46.223 UTC: 	 My-proxy delegated.
+DEBUG 2020-08-18 21:57:46.224 UTC: 	 Retrieving username ...
+DEBUG 2020-08-18 21:57:46.224 UTC: 	 Retrieving username from CRIC...
+DEBUG 2020-08-18 21:57:48.491 UTC: 	 username is ecannaer
+DEBUG 2020-08-18 21:57:48.569 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2020-08-18 21:57:48.569 UTC: 	 using ecannaer_CRAB as credential login name
+DEBUG 2020-08-18 21:57:49.846 UTC: 	 Executing : 
+ command : myproxy-info -l ecannaer_CRAB -s myproxy.cern.ch
+ output : username: ecannaer_CRAB
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 44:15:35  (1.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2020-08-18 21:57:49.847 UTC: 	 Myproxy is valid: 159335
+DEBUG 2020-08-18 21:57:50.355 UTC: 	 Executing : 
+ command : openssl x509 -noout -in ~/.globus/usercert.pem -dates
+ output : notBefore=Sep 25 21:29:38 2019 GMT
+notAfter=Oct 29 21:29:38 2020 GMT
+
+ error: 
+ retcode : 0
+DEBUG 2020-08-18 21:57:50.356 UTC: 	 Delegating a myproxy for 720:00 hours
+DEBUG 2020-08-18 21:57:50.356 UTC: 	 using ecannaer_CRAB as credential login name
+DEBUG 2020-08-18 21:58:01.670 UTC: 	 Executing : 
+ command : export GT_PROXY_MODE=rfc ; myproxy-init -d -n -s myproxy.cern.ch -x -R '/DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch' -x -Z '/DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch' -l 'ecannaer_CRAB' -t 168:00 -c 720:00
+ output : Your identity: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+Creating proxy ........................................................................................ Done
+Proxy Verify OK
+Your proxy is valid until: Thu Sep 17 16:58:00 2020
+A proxy valid for 720 hours (30.0 days) for user ecannaer_CRAB now exists on myproxy.cern.ch.
+
+ error: 
+ retcode : 0
+DEBUG 2020-08-18 21:58:01.670 UTC: 	 using ecannaer_CRAB as credential login name
+DEBUG 2020-08-18 21:58:03.402 UTC: 	 Executing : 
+ command : myproxy-info -l ecannaer_CRAB -s myproxy.cern.ch
+ output : username: ecannaer_CRAB
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 719:59:57  (30.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2020-08-18 21:58:03.402 UTC: 	 My-proxy delegated.
+DEBUG 2020-08-18 21:58:03.403 UTC: 	 Command use: submit
+DEBUG 2020-08-18 21:58:03.403 UTC: 	 Options use: ['-c', 'crab_diquark_QCD_ccfg.py']
+DEBUG 2020-08-18 21:58:04.085 UTC: 	 CRABClient version: v3.200719
+DEBUG 2020-08-18 21:58:04.085 UTC: 	 Instance is prod
+DEBUG 2020-08-18 21:58:04.086 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2020-08-18 21:58:04.086 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2020-08-18 21:58:04.086 UTC: 	 Started submission
+DEBUG 2020-08-18 21:58:04.086 UTC: 	 Working on /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark__ttbar_QCD_background_00
+DEBUG 2020-08-18 21:58:09.275 UTC: 	 Loading required information from the environment
+DEBUG 2020-08-18 21:58:09.276 UTC: 	 Found CMSSW_10_6_0 for slc7_amd64_gcc820 with base /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0
+DEBUG 2020-08-18 21:58:09.276 UTC: 	 Loading required information from the environment
+DEBUG 2020-08-18 21:58:09.276 UTC: 	 Found CMSSW_10_6_0 for slc7_amd64_gcc820 with base /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0
+DEBUG 2020-08-18 21:58:09.276 UTC: 	 UNIQUE NAME: tarUUID 60ccd09b-f2c7-44b3-82ae-1da6ba8fed89 
+DEBUG 2020-08-18 21:58:09.276 UTC: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferOutputs = True
+config.General.workArea = 'crab_projects'
+config.General.requestName = 'diquark__ttbar_QCD_background_00'
+config.section_('JobType')
+config.JobType.psetName = '/uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/ttbarAnalyzer_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.allowUndistributedCMSSW = True
+config.section_('Data')
+config.Data.inputDataset = '/SingleMuon/Run2018A-17Sep2018-v2/MINIAOD'
+config.Data.outputDatasetTag = 'diquark_ttbar_QCD_background'
+config.Data.publication = False
+config.Data.splitting = 'Automatic'
+config.Data.lumiMask = 'Cert_314472-325175_13TeV_17SeptEarlyReReco2018ABC_PromptEraD_Collisions18_JSON.txt'
+config.Data.inputDBS = 'global'
+config.Data.runRange = ' 315252 -316995'
+config.section_('Site')
+config.Site.storageSite = 'T3_US_FNALLPC'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2020-08-18 21:58:09.276 UTC: 	 self.config.JobType.psetName: /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/ttbarAnalyzer_cfg.py
+INFO 2020-08-18 21:58:09.287 UTC: 	 Importing CMSSW configuration /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/ttbarAnalyzer_cfg.py
+INFO 2020-08-18 21:58:27.809 UTC: 	 Finished importing CMSSW configuration /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/ttbarAnalyzer_cfg.py
+DEBUG 2020-08-18 21:58:27.809 UTC: 	 Writing CMSSW configuration to /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark__ttbar_QCD_background_00/inputs/PSet.py
+DEBUG 2020-08-18 21:58:28.138 UTC: 	 The following EDM output files will be collected: []
+DEBUG 2020-08-18 21:58:28.138 UTC: 	 The following TFile output files will be collected: ['QCD_ttbar.root']
+DEBUG 2020-08-18 21:58:28.138 UTC: 	 The following user output files (not listed as PoolOuputModule or TFileService in the CMSSW PSet) will be collected: 
+DEBUG 2020-08-18 21:58:28.138 UTC: 	 Loading required information from the environment
+DEBUG 2020-08-18 21:58:28.139 UTC: 	 Found CMSSW_10_6_0 for slc7_amd64_gcc820 with base /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0
+DEBUG 2020-08-18 21:58:28.139 UTC: 	 Making tarball in /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark__ttbar_QCD_background_00/inputs/60ccd09b-f2c7-44b3-82ae-1da6ba8fed89default.tgz
+DEBUG 2020-08-18 21:58:28.160 UTC: 	 Checking directory /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/lib
+DEBUG 2020-08-18 21:58:28.160 UTC: 	 Adding directory /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/lib to tarball
+DEBUG 2020-08-18 21:58:28.424 UTC: 	 Checking directory /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/biglib
+DEBUG 2020-08-18 21:58:28.424 UTC: 	 Adding directory /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/biglib to tarball
+DEBUG 2020-08-18 21:58:28.490 UTC: 	 Checking directory /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/module
+DEBUG 2020-08-18 21:58:28.682 UTC: 	 Uploading archive /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark__ttbar_QCD_background_00/inputs/60ccd09b-f2c7-44b3-82ae-1da6ba8fed89default.tgz (94 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2020-08-18 21:58:29.969 UTC: 	 Loading required information from the environment
+DEBUG 2020-08-18 21:58:29.969 UTC: 	 Found CMSSW_10_6_0 for slc7_amd64_gcc820 with base /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0
+DEBUG 2020-08-18 21:58:29.969 UTC: 	 Making tarball in /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark__ttbar_QCD_background_00/inputs/debugFiles.tgz
+DEBUG 2020-08-18 21:58:30.026 UTC: 	 Uploading archive /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark__ttbar_QCD_background_00/inputs/debugFiles.tgz (1 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2020-08-18 21:58:30.828 UTC: 	 Result uploading input files: bd19803acdcaa52b36bb2e7aa4c40076937b6571faeea4b1502b0cf9ac8edd86.tar.gz 
+DEBUG 2020-08-18 21:58:30.828 UTC: 	 Attaching lumi mask Cert_314472-325175_13TeV_17SeptEarlyReReco2018ABC_PromptEraD_Collisions18_JSON.txt to the request
+DEBUG 2020-08-18 21:58:30.828 UTC: 	 Reading lumi-mask from Cert_314472-325175_13TeV_17SeptEarlyReReco2018ABC_PromptEraD_Collisions18_JSON.txt
+ERROR 2020-08-18 21:58:30.942 UTC: 	 Invalid CRAB configuration: Parameter Data.runRange should be a comma separated list of integers or (inclusive) ranges. Example: '12345,99900-99910'
+ERROR 2020-08-18 21:58:30.942 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200719.00/bin/crab", line 165, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200719.00/bin/crab", line 152, in __call__
+    self.cmd()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200719.00/lib/CRABClient/Commands/submit.py", line 105, in __call__
+    dummy_inputfiles, jobconfig = plugjobtype.run(filecacheurl)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.200719.00/lib/CRABClient/JobType/Analysis.py", line 231, in run
+    raise ConfigurationException(msg)
+ConfigurationException: Invalid CRAB configuration: Parameter Data.runRange should be a comma separated list of integers or (inclusive) ranges. Example: '12345,99900-99910'

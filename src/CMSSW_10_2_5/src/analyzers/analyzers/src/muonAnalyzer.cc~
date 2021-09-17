@@ -1,0 +1,116 @@
+// system include files
+#include <memory>
+// user include files
+#include "FWCore/Framework/interface/Frameworkfwd.h"
+#include "FWCore/Framework/interface/EDAnalyzer.h"
+#include "FWCore/Framework/interface/Event.h"
+#include "FWCore/Framework/interface/MakerMacros.h"
+#include "FWCore/ParameterSet/interface/ParameterSet.h"
+// new includes
+#include "DataFormats/HepMCCandidate/interface/GenParticle.h"
+#include "DataFormats/JetReco/interface/GenJet.h"
+#include "FWCore/ServiceRegistry/interface/Service.h"
+#include "CommonTools/UtilAlgos/interface/TFileService.h"
+
+#include <TTree.h>
+#include "TLorentzVector.h"
+
+class genPartAnalyzer : public edm::EDAnalyzer {
+public:
+	explicit genPartAnalyzer(const edm::ParameterSet&);
+private:
+   virtual void analyze(const edm::Event&, const edm::EventSetup&);
+   edm::EDGetTokenT<std::vector<reco::GenParticle>> genPartToken_;
+
+   edm::EDGetTokenT<std::vector<reco::GenJet>> genJetToken_;
+
+   TTree * tree;
+   int ngenPart;
+   int ngenJet;
+   double pt[100], eta[100], phi[100], jetpt[100], jeteta[100], jetphi[100];
+   double Z2pt, Z1pt, Z1eta, Z2eta, Z1phi, Z2phi, Z1E, Z2E;
+};
+
+genPartAnalyzer::genPartAnalyzer(const edm::ParameterSet& iConfig)
+{
+   genPartToken_ = consumes<std::vector<reco::GenParticle>>(iConfig.getParameter<edm::InputTag>("genPartCollection"));
+   genJetToken_ =    consumes<std::vector<reco::GenJet>>(iConfig.getParameter<edm::InputTag>("genJetCollection"));
+
+   edm::Service<TFileService> fs;
+   tree = fs->make<TTree>("tree", "tree");
+   tree->Branch("ngenPart", &ngenPart, "ngenPart/I");
+   tree->Branch("pt", pt, "pt[ngenPart]/D");
+   tree->Branch("eta", eta, "eta[ngenPart]/D");
+   tree->Branch("phi", phi, "phi[ngenPart]/D");
+   tree->Branch("Z1pt", &Z1pt, "Z1pt/D");
+   tree->Branch("Z2pt", &Z2pt, "Z2pt/D");
+   tree->Branch("Z1eta", &Z1eta, "Z1eta/D");
+   tree->Branch("Z2eta", &Z2eta, "Z2eta/D");
+   tree->Branch("Z1phi", &Z1phi, "Z1phi/D");
+   tree->Branch("Z2phi", &Z2phi, "Z2phi/D");
+   tree->Branch("Z1E", &Z1E, "Z1E/D");
+   tree->Branch("Z2E", &Z2E, "Z2E/D");
+
+   tree->Branch("ngenJet", &ngenJet, "ngenJet/I");
+   tree->Branch("jetpt", jetpt, "jetpt[ngenJet]/D");
+   tree->Branch("jeteta", jeteta, "jeteta[ngenJet]/D");
+   tree->Branch("jetphi", jetphi, "jetphi[ngenJet]/D");
+}
+
+void genPartAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
+{
+   ngenPart = 0;
+   edm::Handle<std::vector<reco::GenParticle>> genParticles;
+   iEvent.getByToken(genPartToken_, genParticles);
+   int nZ0 = 0;
+   for (auto iM = genParticles->begin(); iM != genParticles->end(); ++iM) 
+   {
+
+
+      if((iM->pdgId() !=23) || (iM->isLastCopy() == false)) continue;
+
+      pt[ngenPart] = iM->pt();  
+      eta[ngenPart] = iM->eta();
+      phi[ngenPart] = iM->phi();
+      nZ0++;
+      
+      if(nZ0 == 1) 
+      {
+         Z1pt = iM->pt();
+         Z1phi = iM->phi();
+         Z1eta = iM->eta();
+         Z1E   = iM->energy();
+      }
+      else if (nZ0 == 2)
+      {  
+         Z2phi = iM->phi();
+         Z2eta = iM->eta();
+         Z2E   = iM->energy();
+         Z2pt = iM->pt();
+      }
+      ++ngenPart;
+
+   }
+
+
+
+////////////////////Jets/////////////////////////////////////////
+
+   edm::Handle<std::vector<reco::GenJet>> genJets;
+   iEvent.getByToken(genJetToken_, genJets);
+
+   ngenJet = 0;
+   for(auto iM = genJets->begin(); iM != genJets->end(); ++iM) 
+   {
+      jetpt[ngenJet] = iM->pt();
+      jetphi[ngenJet]= iM->phi();
+      jeteta[ngenJet]= iM->eta();
+
+      ++ngenJet;
+   }  
+   tree->Fill();
+}
+
+//define this as a plug-in
+DEFINE_FWK_MODULE(genPartAnalyzer);
+

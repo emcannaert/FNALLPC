@@ -1,0 +1,2 @@
+ALL_PACKAGES += hhMCgenerator/GenericTarball
+subdirs_src_hhMCgenerator_GenericTarball := src_hhMCgenerator_GenericTarball_python src_hhMCgenerator_GenericTarball_plugins

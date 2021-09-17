@@ -1,0 +1,2 @@
+ALL_PACKAGES += CMSSW_10_2_6/config
+subdirs_src_CMSSW_10_2_6_config := src_CMSSW_10_2_6_config_SCRAM src_CMSSW_10_2_6_config_toolbox

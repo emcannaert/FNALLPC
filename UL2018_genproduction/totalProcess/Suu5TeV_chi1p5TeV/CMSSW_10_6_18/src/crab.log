@@ -1,0 +1,21 @@
+DEBUG 2021-09-06 09:34:22.390 UTC: 	 CRAB Client version: v3.210825
+DEBUG 2021-09-06 09:34:22.390 UTC: 	 Running on: Linux cmslpc126.fnal.gov 3.10.0-1160.36.2.el7.x86_64 #1 SMP Mon Jul 26 08:21:44 CDT 2021 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2021-09-06 09:34:22.390 UTC: 	 Executing command: 'resubmit'
+DEBUG 2021-09-06 09:34:22.391 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+ERROR 2021-09-06 09:34:22.393 UTC: 	 Cannot find .requestcache file in CRAB project directory /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu5TeV_chi1p5TeV/CMSSW_10_6_18/src/crab_projects
+ERROR 2021-09-06 09:34:22.393 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210825.00/bin/crab", line 151, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210825.00/bin/crab", line 136, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210825.00/lib/CRABClient/Commands/resubmit.py", line 26, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210825.00/lib/CRABClient/Commands/SubCommand.py", line 270, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210825.00/lib/CRABClient/Commands/SubCommand.py", line 650, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210825.00/lib/CRABClient/Commands/SubCommand.py", line 512, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu5TeV_chi1p5TeV/CMSSW_10_6_18/src/crab_projects
+INFO 2021-09-06 09:34:22.396 UTC: 	 Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu5TeV_chi1p5TeV/CMSSW_10_6_18/src/crab.log

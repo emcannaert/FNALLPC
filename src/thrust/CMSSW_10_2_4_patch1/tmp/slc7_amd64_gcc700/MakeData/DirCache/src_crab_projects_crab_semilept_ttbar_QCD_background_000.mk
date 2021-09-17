@@ -1,0 +1,2 @@
+ALL_PACKAGES += crab_projects/crab_semilept_ttbar_QCD_background_000
+subdirs_src_crab_projects_crab_semilept_ttbar_QCD_background_000 := src_crab_projects_crab_semilept_ttbar_QCD_background_000_inputs

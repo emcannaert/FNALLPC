@@ -1,0 +1,206 @@
+DEBUG 2021-09-10 08:15:14.314 UTC: 	 CRAB Client version: v3.210825
+DEBUG 2021-09-10 08:15:14.314 UTC: 	 Running on: Linux cmslpc140.fnal.gov 3.10.0-1160.36.2.el7.x86_64 #1 SMP Mon Jul 26 08:21:44 CDT 2021 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2021-09-10 08:15:14.314 UTC: 	 Executing command: 'submit'
+DEBUG 2021-09-10 08:15:14.315 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2021-09-10 08:15:14.319 UTC: 	 Will use CRAB configuration file Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_diquark_RECO_prod_new_cfg.py
+DEBUG 2021-09-10 08:15:14.319 UTC: 	 Loading CRAB configuration file.
+DEBUG 2021-09-10 08:15:14.326 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2021-09-10 08:15:14.353 UTC: 	 Checking credentials
+DEBUG 2021-09-10 08:15:14.353 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2021-09-10 08:15:14.353 UTC: 	 Getting proxy life time left
+DEBUG 2021-09-10 08:15:14.459 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 617568
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-10 08:15:14.565 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 617568
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-10 08:15:14.565 UTC: 	 Proxy valid for 171:32:48 hours
+DEBUG 2021-09-10 08:15:14.670 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-10 08:15:15.239 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+DEBUG 2021-09-10 08:15:15.353 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -identity
+ output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-10 08:15:15.358 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2021-09-10 08:15:15.358 UTC: 	 using b7b51e0178e197a43a1d723fd43ab6570e42a3d5 as credential login name
+DEBUG 2021-09-10 08:15:16.162 UTC: 	 Executing : 
+ command : myproxy-info -l b7b51e0178e197a43a1d723fd43ab6570e42a3d5 -s myproxy.cern.ch
+ output : username: b7b51e0178e197a43a1d723fd43ab6570e42a3d5
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 650:47:53  (27.1 days)
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-10 08:15:16.163 UTC: 	 Myproxy is valid: 2342873
+DEBUG 2021-09-10 08:15:16.163 UTC: 	 Retrieving username ...
+DEBUG 2021-09-10 08:15:16.163 UTC: 	 Retrieving username from CRIC...
+DEBUG 2021-09-10 08:15:17.759 UTC: 	 username is ecannaer
+DEBUG 2021-09-10 08:15:17.763 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2021-09-10 08:15:17.763 UTC: 	 using ecannaer_CRAB as credential login name
+DEBUG 2021-09-10 08:15:18.570 UTC: 	 Executing : 
+ command : myproxy-info -l ecannaer_CRAB -s myproxy.cern.ch
+ output : username: ecannaer_CRAB
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 651:29:17  (27.1 days)
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-10 08:15:18.570 UTC: 	 Myproxy is valid: 2345357
+DEBUG 2021-09-10 08:15:18.570 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: b7b51e0178e197a43a1d723fd43ab6570e42a3d5  - validity: 27 days, 2:47:53
+  Credential exists on myproxy: username: ecannaer_CRAB  - validity: 27 days, 3:29:17
+DEBUG 2021-09-10 08:15:18.571 UTC: 	 Command use: submit
+DEBUG 2021-09-10 08:15:18.571 UTC: 	 Options use: ['-c', 'Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_diquark_RECO_prod_new_cfg.py']
+DEBUG 2021-09-10 08:15:19.123 UTC: 	 CRABClient version: v3.210825
+DEBUG 2021-09-10 08:15:19.123 UTC: 	 Instance is prod
+DEBUG 2021-09-10 08:15:19.123 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2021-09-10 08:15:19.123 UTC: 	 Command api workflow
+DEBUG 2021-09-10 08:15:19.123 UTC: 	 Started submission
+DEBUG 2021-09-10 08:15:19.124 UTC: 	 Working on /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1//src/crab_projects/crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001
+DEBUG 2021-09-10 08:15:19.761 UTC: 	 Loading required information from the environment
+DEBUG 2021-09-10 08:15:19.761 UTC: 	 Found CMSSW_10_2_16_UL for slc7_amd64_gcc700 with base /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi1p5TeV/CMSSW_10_2_16_UL
+DEBUG 2021-09-10 08:15:19.761 UTC: 	 Loading required information from the environment
+DEBUG 2021-09-10 08:15:19.761 UTC: 	 Found CMSSW_10_2_16_UL for slc7_amd64_gcc700 with base /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi1p5TeV/CMSSW_10_2_16_UL
+DEBUG 2021-09-10 08:15:19.761 UTC: 	 UNIQUE NAME: tarUUID c12b911d-fe77-4b09-b981-b7fe4c05cda8 
+DEBUG 2021-09-10 08:15:19.762 UTC: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferOutputs = True
+config.General.workArea = '/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1//src/crab_projects'
+config.General.requestName = 'MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001'
+config.section_('JobType')
+config.JobType.psetName = '/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1//src/B2G-RunIISummer20UL18RECO-00001_1_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.allowUndistributedCMSSW = True
+config.section_('Data')
+config.Data.inputDataset = '/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_Suu7TeV_chi1TeV_ALLDECAYS_TuneCP5_13TeV-pythia8_HLT-b403a189a2d057e62e59ed092120c7f4/USER'
+config.Data.outputDatasetTag = 'B2G-RunIISummer20UL18p_Suu7TeV_chi1TeV_ALLDECAYS_TuneCP5_13TeV-pythia8_RECO'
+config.Data.publishDBS = 'phys03'
+config.Data.publication = True
+config.Data.unitsPerJob = 1
+config.Data.inputDBS = 'phys03'
+config.Data.splitting = 'FileBased'
+config.Data.totalUnits = -1
+config.section_('Site')
+config.Site.storageSite = 'T3_US_FNALLPC'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2021-09-10 08:15:19.762 UTC: 	 self.config.JobType.psetName: /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1//src/B2G-RunIISummer20UL18RECO-00001_1_cfg.py
+INFO 2021-09-10 08:15:19.762 UTC: 	 Importing CMSSW configuration /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1//src/B2G-RunIISummer20UL18RECO-00001_1_cfg.py
+INFO 2021-09-10 08:15:27.339 UTC: 	 Finished importing CMSSW configuration /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1//src/B2G-RunIISummer20UL18RECO-00001_1_cfg.py
+DEBUG 2021-09-10 08:15:27.339 UTC: 	 Writing CMSSW configuration to /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1//src/crab_projects/crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001/inputs/PSet.py
+DEBUG 2021-09-10 08:15:31.977 UTC: 	 The following EDM output files will be collected: ['B2G-RunIISummer20UL18RECO-00001.root']
+DEBUG 2021-09-10 08:15:31.977 UTC: 	 The following TFile output files will be collected: []
+DEBUG 2021-09-10 08:15:31.977 UTC: 	 The following user output files (not listed as PoolOuputModule or TFileService in the CMSSW PSet) will be collected: 
+DEBUG 2021-09-10 08:15:31.977 UTC: 	 Loading required information from the environment
+DEBUG 2021-09-10 08:15:31.977 UTC: 	 Found CMSSW_10_2_16_UL for slc7_amd64_gcc700 with base /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi1p5TeV/CMSSW_10_2_16_UL
+DEBUG 2021-09-10 08:15:31.978 UTC: 	 Making tarball in /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1//src/crab_projects/crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001/inputs/c12b911d-fe77-4b09-b981-b7fe4c05cda8default.tgz
+DEBUG 2021-09-10 08:15:31.979 UTC: 	 Checking directory /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi1p5TeV/CMSSW_10_2_16_UL/lib
+DEBUG 2021-09-10 08:15:31.979 UTC: 	 Adding directory /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi1p5TeV/CMSSW_10_2_16_UL/lib to tarball
+DEBUG 2021-09-10 08:15:31.985 UTC: 	 Checking directory /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi1p5TeV/CMSSW_10_2_16_UL/biglib
+DEBUG 2021-09-10 08:15:31.985 UTC: 	 Adding directory /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi1p5TeV/CMSSW_10_2_16_UL/biglib to tarball
+DEBUG 2021-09-10 08:15:31.987 UTC: 	 Checking directory /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi1p5TeV/CMSSW_10_2_16_UL/module
+DEBUG 2021-09-10 08:15:33.226 UTC: 	 Uploading archive /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001/inputs/c12b911d-fe77-4b09-b981-b7fe4c05cda8default.tgz (1.027344.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/S3/crabcache_prod
+DEBUG 2021-09-10 08:15:34.410 UTC: 	 sandbox ce7306a58f05e5b7a5060b9b265582d2fb3672205e26c5e6cb6e82f56905f61f.tar.gz is already in the S3 store, will not upload again
+DEBUG 2021-09-10 08:15:34.410 UTC: 	 Loading required information from the environment
+DEBUG 2021-09-10 08:15:34.410 UTC: 	 Found CMSSW_10_2_16_UL for slc7_amd64_gcc700 with base /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi1p5TeV/CMSSW_10_2_16_UL
+DEBUG 2021-09-10 08:15:34.410 UTC: 	 Making tarball in /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1//src/crab_projects/crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001/inputs/debugFiles.tgz
+DEBUG 2021-09-10 08:15:34.417 UTC: 	 Uploading archive /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001/inputs/debugFiles.tgz (2 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/S3/crabcache_prod
+DEBUG 2021-09-10 08:15:35.045 UTC: 	 Will execute:
+curl -f -v -X POST  -H "User-Agent: CRAB" -F "key=ecannaer/sandboxes/fb554cf4a2240ca85b98717a3e5bf6d1f2027ce9c34e4625b86ce0418e97a126.tar.gz" -F "AWSAccessKeyId=ab00fcc889f248c495d2875f15a3badb" -F "policy=eyJjb25kaXRpb25zIjogW3siYnVja2V0IjogImNyYWJjYWNoZV9wcm9kIn0sIHsia2V5IjogImVjYW5uYWVyL3NhbmRib3hlcy9mYjU1NGNmNGEyMjQwY2E4NWI5ODcxN2EzZTViZjZkMWYyMDI3Y2U5YzM0ZTQ2MjViODZjZTA0MThlOTdhMTI2LnRhci5neiJ9XSwgImV4cGlyYXRpb24iOiAiMjAyMS0wOS0xMFQwOToxNTozNFoifQ==" -F "signature=PI6JLT89fygWK8SJvTmrkPSC7Nk=" -F "file=@/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001/inputs/debugFiles.tgz" "https://s3.cern.ch/crabcache_prod"
+DEBUG 2021-09-10 08:15:36.634 UTC: 	 exitcode: 0
+stdout: 
+stderr: Note: Unnecessary use of -X or --request, POST is already inferred.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 137.138.151.203...
+* TCP_NODELAY set
+* Connected to s3.cern.ch (137.138.151.203) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* TLSv1.2 (OUT), TLS header, Certificate Status (22):
+} [5 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* TLSv1.2 (IN), TLS handshake, Server hello (2):
+{ [70 bytes data]
+* TLSv1.2 (IN), TLS handshake, Certificate (11):
+{ [4780 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+{ [333 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server finished (14):
+{ [4 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+} [70 bytes data]
+* TLSv1.2 (OUT), TLS change cipher, Client hello (1):
+} [1 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Finished (20):
+} [16 bytes data]
+* TLSv1.2 (IN), TLS change cipher, Client hello (1):
+{ [1 bytes data]
+* TLSv1.2 (IN), TLS handshake, Finished (20):
+{ [16 bytes data]
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: C=CH; ST=Genève; L=Meyrin; O=Organisation européenne pour la Recherche nucléaire (CERN); CN=*.s3.cern.ch
+*  start date: Mar 10 00:00:00 2021 GMT
+*  expire date: Mar 10 23:59:59 2022 GMT
+*  subjectAltName: host "s3.cern.ch" matched cert's "s3.cern.ch"
+*  issuer: C=GB; ST=Greater Manchester; L=Salford; O=Sectigo Limited; CN=Sectigo RSA Organization Validation Secure Server CA
+*  SSL certificate verify ok.
+} [5 bytes data]
+> POST /crabcache_prod HTTP/1.1
+> Host: s3.cern.ch
+> Accept: */*
+> User-Agent: CRAB
+> Content-Length: 3341
+> Content-Type: multipart/form-data; boundary=------------------------92bd99df0f60a6e4
+> Expect: 100-continue
+> 
+* Done waiting for 100-continue
+  0  3341    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0} [5 bytes data]
+< HTTP/1.1 100 Continue
+{ [5 bytes data]
+< HTTP/1.1 204 No Content
+< Accept-Ranges: bytes
+< Bucket: crabcache_prod
+< Date: Fri, 10 Sep 2021 08:15:36 GMT
+< X-Amz-Request-Id: tx00000000000000de2b3e4-00613b1427-1e049857-default
+< 
+100  3341    0     0  100  3341      0   2140  0:00:01  0:00:01 --:--:--  2138
+* Connection #0 to host s3.cern.ch left intact
+
+DEBUG 2021-09-10 08:15:36.634 UTC: 	 sandbox /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001/inputs/debugFiles.tgz successully uploaded to S3
+DEBUG 2021-09-10 08:15:36.635 UTC: 	 Result uploading input files: ce7306a58f05e5b7a5060b9b265582d2fb3672205e26c5e6cb6e82f56905f61f.tar.gz 
+INFO 2021-09-10 08:15:36.635 UTC: 	 Sending the request to the server at cmsweb.cern.ch
+DEBUG 2021-09-10 08:15:36.635 UTC: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T3_US_FNALLPC', 'algoargs': 1, 'cachefilename': 'ce7306a58f05e5b7a5060b9b265582d2fb3672205e26c5e6cb6e82f56905f61f.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_10_2_16_UL', 'edmoutfiles': ['B2G-RunIISummer20UL18RECO-00001.root'], 'userfiles': [], 'primarydataset': '', 'inputdata': '/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_Suu7TeV_chi1TeV_ALLDECAYS_TuneCP5_13TeV-pythia8_HLT-b403a189a2d057e62e59ed092120c7f4/USER', 'dryrun': 0, 'workflow': 'crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001', 'cacheurl': u'https://cmsweb.cern.ch/S3/crabcache_prod', 'nonprodsw': 1, 'tfileoutfiles': [], 'oneEventMode': 0, 'debugfilename': 'fb554cf4a2240ca85b98717a3e5bf6d1f2027ce9c34e4625b86ce0418e97a126.tar.gz', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc7_amd64_gcc700', 'totalunits': -1, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'B2G-RunIISummer20UL18p_Suu7TeV_chi1TeV_ALLDECAYS_TuneCP5_13TeV-pythia8_RECO'} 
+DEBUG 2021-09-10 08:15:36.636 UTC: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=0&useparent=0&asyncdest=T3_US_FNALLPC&algoargs=1&cachefilename=ce7306a58f05e5b7a5060b9b265582d2fb3672205e26c5e6cb6e82f56905f61f.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_10_2_16_UL&primarydataset=&inputdata=%2FSuuToChiChi%2Fecannaer-B2G-RunIISummer20UL18p_Suu7TeV_chi1TeV_ALLDECAYS_TuneCP5_13TeV-pythia8_HLT-b403a189a2d057e62e59ed092120c7f4%2FUSER&dryrun=0&workflow=crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2FS3%2Fcrabcache_prod&nonprodsw=1&oneEventMode=0&debugfilename=fb554cf4a2240ca85b98717a3e5bf6d1f2027ce9c34e4625b86ce0418e97a126.tar.gz&saveoutput=1&publication=1&jobarch=slc7_amd64_gcc700&totalunits=-1&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=B2G-RunIISummer20UL18p_Suu7TeV_chi1TeV_ALLDECAYS_TuneCP5_13TeV-pythia8_RECO&edmoutfiles=B2G-RunIISummer20UL18RECO-00001.root
+DEBUG 2021-09-10 08:15:37.395 UTC: 	 Result: {u'result': [{u'RequestName': u'210910_081537:ecannaer_crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001'}]}
+INFO 2021-09-10 08:15:37.400 UTC: 	 Success: Your task has been delivered to the prod CRAB3 server.
+INFO 2021-09-10 08:15:37.400 UTC: 	 Task name: 210910_081537:ecannaer_crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001
+INFO 2021-09-10 08:15:37.400 UTC: 	 Project dir: /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1//src/crab_projects/crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001
+INFO 2021-09-10 08:15:37.400 UTC: 	 Please use ' crab status -d /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1//src/crab_projects/crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001 ' to check how the submission process proceeds.
+DEBUG 2021-09-10 08:15:37.400 UTC: 	 About to return
+INFO 2021-09-10 08:15:37.404 UTC: 	 Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_RECO_0001/crab.log

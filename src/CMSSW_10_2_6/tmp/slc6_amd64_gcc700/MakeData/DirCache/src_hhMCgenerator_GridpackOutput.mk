@@ -1,0 +1,2 @@
+ALL_PACKAGES += hhMCgenerator/GridpackOutput
+subdirs_src_hhMCgenerator_GridpackOutput := src_hhMCgenerator_GridpackOutput_CMSSW_7_1_30 src_hhMCgenerator_GridpackOutput_mgbasedir src_hhMCgenerator_GridpackOutput_process

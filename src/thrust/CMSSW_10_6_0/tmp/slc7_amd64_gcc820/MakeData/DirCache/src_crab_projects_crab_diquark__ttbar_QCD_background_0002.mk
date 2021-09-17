@@ -1,0 +1,2 @@
+ALL_PACKAGES += crab_projects/crab_diquark__ttbar_QCD_background_0002
+subdirs_src_crab_projects_crab_diquark__ttbar_QCD_background_0002 := src_crab_projects_crab_diquark__ttbar_QCD_background_0002_inputs

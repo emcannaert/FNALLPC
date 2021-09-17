@@ -1,0 +1,2 @@
+ALL_PACKAGES += crab_projects/crab_diquark_QCD_background_1500to2000_MC_0002
+subdirs_src_crab_projects_crab_diquark_QCD_background_1500to2000_MC_0002 := 

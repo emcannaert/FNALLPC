@@ -1,0 +1,2 @@
+ALL_PACKAGES += CMSSW_10_2_5/cfipython
+subdirs_src_CMSSW_10_2_5_cfipython := src_CMSSW_10_2_5_cfipython_slc6_amd64_gcc700

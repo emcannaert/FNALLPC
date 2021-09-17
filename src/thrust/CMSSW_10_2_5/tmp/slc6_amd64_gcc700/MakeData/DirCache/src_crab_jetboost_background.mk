@@ -1,0 +1,2 @@
+ALL_SUBSYSTEMS+=crab_jetboost_background
+subdirs_src_crab_jetboost_background = src_crab_jetboost_background_results src_crab_jetboost_background_inputs

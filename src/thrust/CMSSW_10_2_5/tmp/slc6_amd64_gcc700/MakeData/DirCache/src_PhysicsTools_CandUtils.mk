@@ -1,0 +1,2 @@
+ALL_PACKAGES += PhysicsTools/CandUtils
+subdirs_src_PhysicsTools_CandUtils := src_PhysicsTools_CandUtils_interface src_PhysicsTools_CandUtils_src src_PhysicsTools_CandUtils_test

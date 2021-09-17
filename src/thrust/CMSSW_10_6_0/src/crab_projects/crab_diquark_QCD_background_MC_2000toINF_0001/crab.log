@@ -1,0 +1,394 @@
+DEBUG 2020-11-25 00:37:18.954 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-25 00:37:18.954 UTC: 	 Running on: Linux cmslpc167.fnal.gov 3.10.0-1127.19.1.el7.x86_64 #1 SMP Thu Aug 20 14:39:03 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2020-11-25 00:37:18.954 UTC: 	 Executing command: 'submit'
+DEBUG 2020-11-25 00:37:18.954 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2020-11-25 00:37:18.971 UTC: 	 Will use CRAB configuration file crab_diquark_QCD_ccfg.py
+DEBUG 2020-11-25 00:37:18.971 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-11-25 00:37:18.980 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2020-11-25 00:37:19.013 UTC: 	 Checking credentials
+DEBUG 2020-11-25 00:37:19.013 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-25 00:37:19.013 UTC: 	 Getting proxy life time left
+DEBUG 2020-11-25 00:37:19.117 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 31288
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:37:19.220 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 31288
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:37:19.220 UTC: 	 Proxy valid for 08:41:28 hours
+DEBUG 2020-11-25 00:37:19.323 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:37:19.963 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+DEBUG 2020-11-25 00:37:20.072 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -identity
+ output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:37:20.077 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2020-11-25 00:37:20.077 UTC: 	 using b7b51e0178e197a43a1d723fd43ab6570e42a3d5 as credential login name
+DEBUG 2020-11-25 00:37:21.383 UTC: 	 Executing : 
+ command : myproxy-info -l b7b51e0178e197a43a1d723fd43ab6570e42a3d5 -s myproxy.cern.ch
+ output : username: b7b51e0178e197a43a1d723fd43ab6570e42a3d5
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 430:13:59  (17.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:37:21.384 UTC: 	 Myproxy is valid: 1548839
+DEBUG 2020-11-25 00:37:21.384 UTC: 	 Retrieving username ...
+DEBUG 2020-11-25 00:37:21.384 UTC: 	 Retrieving username from CRIC...
+DEBUG 2020-11-25 00:37:22.739 UTC: 	 username is ecannaer
+DEBUG 2020-11-25 00:37:22.744 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2020-11-25 00:37:22.744 UTC: 	 using ecannaer_CRAB as credential login name
+DEBUG 2020-11-25 00:37:23.550 UTC: 	 Executing : 
+ command : myproxy-info -l ecannaer_CRAB -s myproxy.cern.ch
+ output : username: ecannaer_CRAB
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 384:53:10  (16.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:37:23.551 UTC: 	 Myproxy is valid: 1385590
+DEBUG 2020-11-25 00:37:23.551 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: b7b51e0178e197a43a1d723fd43ab6570e42a3d5  - validity: 17 days, 22:13:59
+  Credential exists on myproxy: username: ecannaer_CRAB  - validity: 16 days, 0:53:10
+DEBUG 2020-11-25 00:37:23.551 UTC: 	 Command use: submit
+DEBUG 2020-11-25 00:37:23.551 UTC: 	 Options use: ['-c', 'crab_diquark_QCD_ccfg.py']
+DEBUG 2020-11-25 00:37:24.147 UTC: 	 CRABClient version: v3.201110
+DEBUG 2020-11-25 00:37:24.147 UTC: 	 Instance is prod
+DEBUG 2020-11-25 00:37:24.147 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2020-11-25 00:37:24.147 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2020-11-25 00:37:24.147 UTC: 	 Started submission
+DEBUG 2020-11-25 00:37:24.147 UTC: 	 Working on /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001
+DEBUG 2020-11-25 00:37:24.789 UTC: 	 Loading required information from the environment
+DEBUG 2020-11-25 00:37:24.789 UTC: 	 Found CMSSW_10_6_0 for slc7_amd64_gcc820 with base /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0
+DEBUG 2020-11-25 00:37:24.789 UTC: 	 Loading required information from the environment
+DEBUG 2020-11-25 00:37:24.789 UTC: 	 Found CMSSW_10_6_0 for slc7_amd64_gcc820 with base /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0
+DEBUG 2020-11-25 00:37:24.789 UTC: 	 UNIQUE NAME: tarUUID f3508590-b98c-4450-a8c1-4b5f7b4b6d87 
+DEBUG 2020-11-25 00:37:24.789 UTC: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferOutputs = True
+config.General.workArea = 'crab_projects'
+config.General.requestName = 'diquark_QCD_background_MC_2000toINF_0001'
+config.section_('JobType')
+config.JobType.psetName = '/uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/diquarkAnalyzer_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.allowUndistributedCMSSW = True
+config.section_('Data')
+config.Data.inputDataset = '/QCD_HT2000toInf_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM'
+config.Data.outputDatasetTag = 'diquark_QCD_background'
+config.Data.publication = False
+config.Data.unitsPerJob = 10
+config.Data.splitting = 'FileBased'
+config.Data.inputDBS = 'global'
+config.section_('Site')
+config.Site.storageSite = 'T3_US_FNALLPC'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2020-11-25 00:37:24.789 UTC: 	 self.config.JobType.psetName: /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/diquarkAnalyzer_cfg.py
+INFO 2020-11-25 00:37:24.790 UTC: 	 Importing CMSSW configuration /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/diquarkAnalyzer_cfg.py
+INFO 2020-11-25 00:37:25.361 UTC: 	 Finished importing CMSSW configuration /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/diquarkAnalyzer_cfg.py
+DEBUG 2020-11-25 00:37:25.361 UTC: 	 Writing CMSSW configuration to /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001/inputs/PSet.py
+DEBUG 2020-11-25 00:37:25.404 UTC: 	 The following EDM output files will be collected: []
+DEBUG 2020-11-25 00:37:25.404 UTC: 	 The following TFile output files will be collected: ['diquark_QCD_BR_MC.root']
+DEBUG 2020-11-25 00:37:25.404 UTC: 	 The following user output files (not listed as PoolOuputModule or TFileService in the CMSSW PSet) will be collected: 
+DEBUG 2020-11-25 00:37:25.404 UTC: 	 Loading required information from the environment
+DEBUG 2020-11-25 00:37:25.404 UTC: 	 Found CMSSW_10_6_0 for slc7_amd64_gcc820 with base /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0
+DEBUG 2020-11-25 00:37:25.404 UTC: 	 Making tarball in /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001/inputs/f3508590-b98c-4450-a8c1-4b5f7b4b6d87default.tgz
+DEBUG 2020-11-25 00:37:25.406 UTC: 	 Checking directory /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/lib
+DEBUG 2020-11-25 00:37:25.406 UTC: 	 Adding directory /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/lib to tarball
+DEBUG 2020-11-25 00:37:25.416 UTC: 	 Checking directory /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/biglib
+DEBUG 2020-11-25 00:37:25.416 UTC: 	 Adding directory /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/biglib to tarball
+DEBUG 2020-11-25 00:37:25.417 UTC: 	 Checking directory /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/module
+DEBUG 2020-11-25 00:37:25.494 UTC: 	 Uploading archive /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001/inputs/f3508590-b98c-4450-a8c1-4b5f7b4b6d87default.tgz (101 KB) to the CRAB cache. Using URI https://cmsweb-k8s-prod.cern.ch/crabcache
+DEBUG 2020-11-25 00:37:26.525 UTC: 	 Loading required information from the environment
+DEBUG 2020-11-25 00:37:26.525 UTC: 	 Found CMSSW_10_6_0 for slc7_amd64_gcc820 with base /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0
+DEBUG 2020-11-25 00:37:26.525 UTC: 	 Making tarball in /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001/inputs/debugFiles.tgz
+DEBUG 2020-11-25 00:37:26.532 UTC: 	 Uploading archive /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001/inputs/debugFiles.tgz (1 KB) to the CRAB cache. Using URI https://cmsweb-k8s-prod.cern.ch/crabcache
+DEBUG 2020-11-25 00:37:27.208 UTC: 	 Result uploading input files: 7c99adf28d54e2cf43842d7bf68fbdecc5a632c13b7b19775f9bef98a88f6069.tar.gz 
+INFO 2020-11-25 00:37:27.208 UTC: 	 Sending the request to the server at cmsweb.cern.ch
+DEBUG 2020-11-25 00:37:27.208 UTC: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T3_US_FNALLPC', 'algoargs': 10, 'cachefilename': '7c99adf28d54e2cf43842d7bf68fbdecc5a632c13b7b19775f9bef98a88f6069.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_10_6_0', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/QCD_HT2000toInf_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM', 'dryrun': 0, 'workflow': 'crab_diquark_QCD_background_MC_2000toINF_0001', 'cacheurl': u'https://cmsweb-k8s-prod.cern.ch/crabcache', 'nonprodsw': 1, 'tfileoutfiles': ['diquark_QCD_BR_MC.root'], 'oneEventMode': 0, 'debugfilename': '956ef9c0a89299c8cc432fd76b9359144ae7804b4f45987348c55b0fd4bce048.tar.gz', 'saveoutput': 1, 'publication': 0, 'jobarch': 'slc7_amd64_gcc820', 'totalunits': 0, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'diquark_QCD_background'} 
+DEBUG 2020-11-25 00:37:27.208 UTC: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=0&useparent=0&asyncdest=T3_US_FNALLPC&algoargs=10&cachefilename=7c99adf28d54e2cf43842d7bf68fbdecc5a632c13b7b19775f9bef98a88f6069.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_10_6_0&primarydataset=&inputdata=%2FQCD_HT2000toInf_TuneCP5_13TeV-madgraphMLM-pythia8%2FRunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1%2FMINIAODSIM&dryrun=0&workflow=crab_diquark_QCD_background_MC_2000toINF_0001&cacheurl=https%3A%2F%2Fcmsweb-k8s-prod.cern.ch%2Fcrabcache&nonprodsw=1&oneEventMode=0&debugfilename=956ef9c0a89299c8cc432fd76b9359144ae7804b4f45987348c55b0fd4bce048.tar.gz&saveoutput=1&publication=0&jobarch=slc7_amd64_gcc820&totalunits=0&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=diquark_QCD_background&tfileoutfiles=diquark_QCD_BR_MC.root
+DEBUG 2020-11-25 00:37:28.452 UTC: 	 Result: {u'result': [{u'RequestName': u'201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001'}]}
+INFO 2020-11-25 00:37:28.457 UTC: 	 Success: Your task has been delivered to the prod CRAB3 server.
+INFO 2020-11-25 00:37:28.457 UTC: 	 Task name: 201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001
+INFO 2020-11-25 00:37:28.457 UTC: 	 Project dir: crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001
+INFO 2020-11-25 00:37:28.457 UTC: 	 Please use ' crab status -d crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001 ' to check how the submission process proceeds.
+DEBUG 2020-11-25 00:37:28.457 UTC: 	 About to return
+INFO 2020-11-25 00:37:28.460 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001/crab.log
+DEBUG 2020-11-25 00:37:37.637 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-25 00:37:37.637 UTC: 	 Running on: Linux cmslpc167.fnal.gov 3.10.0-1127.19.1.el7.x86_64 #1 SMP Thu Aug 20 14:39:03 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2020-11-25 00:37:37.637 UTC: 	 Executing command: 'status'
+DEBUG 2020-11-25 00:37:37.637 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+DEBUG 2020-11-25 00:37:37.651 UTC: 	 Checking credentials
+DEBUG 2020-11-25 00:37:37.651 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-25 00:37:37.651 UTC: 	 Getting proxy life time left
+DEBUG 2020-11-25 00:37:37.755 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 31270
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:37:37.858 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 31270
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:37:37.858 UTC: 	 Proxy valid for 08:41:10 hours
+DEBUG 2020-11-25 00:37:38.452 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+DEBUG 2020-11-25 00:37:38.560 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -identity
+ output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:37:38.566 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2020-11-25 00:37:38.566 UTC: 	 using b7b51e0178e197a43a1d723fd43ab6570e42a3d5 as credential login name
+DEBUG 2020-11-25 00:37:39.571 UTC: 	 Executing : 
+ command : myproxy-info -l b7b51e0178e197a43a1d723fd43ab6570e42a3d5 -s myproxy.cern.ch
+ output : username: b7b51e0178e197a43a1d723fd43ab6570e42a3d5
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 430:13:41  (17.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:37:39.572 UTC: 	 Myproxy is valid: 1548821
+DEBUG 2020-11-25 00:37:39.572 UTC: 	 Retrieving username ...
+DEBUG 2020-11-25 00:37:39.572 UTC: 	 Retrieving username from CRIC...
+DEBUG 2020-11-25 00:37:40.824 UTC: 	 username is ecannaer
+DEBUG 2020-11-25 00:37:40.829 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2020-11-25 00:37:40.829 UTC: 	 using ecannaer_CRAB as credential login name
+DEBUG 2020-11-25 00:37:41.634 UTC: 	 Executing : 
+ command : myproxy-info -l ecannaer_CRAB -s myproxy.cern.ch
+ output : username: ecannaer_CRAB
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 384:52:52  (16.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:37:41.635 UTC: 	 Myproxy is valid: 1385572
+DEBUG 2020-11-25 00:37:41.635 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: b7b51e0178e197a43a1d723fd43ab6570e42a3d5  - validity: 17 days, 22:13:41
+  Credential exists on myproxy: username: ecannaer_CRAB  - validity: 16 days, 0:52:52
+DEBUG 2020-11-25 00:37:41.635 UTC: 	 Command use: status
+DEBUG 2020-11-25 00:37:41.635 UTC: 	 Options use: ['-d', 'crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001']
+DEBUG 2020-11-25 00:37:42.204 UTC: 	 CRABClient version: v3.201110
+DEBUG 2020-11-25 00:37:42.204 UTC: 	 Instance is prod
+DEBUG 2020-11-25 00:37:42.204 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2020-11-25 00:37:42.204 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2020-11-25 00:37:42.831 UTC: 	 Got information from server oracle database: {u'result': [u'201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001', u'None', u'None', u'NEW', u'SUBMIT', u'2020-11-25 00:37:28.394260', u'None', u'None', u'None', u'CMSSW_10_6_0', u'slc7_amd64_gcc820', u'/QCD_HT2000toInf_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'7c99adf28d54e2cf43842d7bf68fbdecc5a632c13b7b19775f9bef98a88f6069.tar.gz', u'https://cmsweb-k8s-prod.cern.ch/crabcache', u'ecannaer', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert', u'cms', u'None', u'None', u'diquark_QCD_background-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['diquark_QCD_BR_MC.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'None', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'None', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmsgwms-collector-global.fnal.gov', u'None', u'F', u'[]', u'T', u'/store/user/ecannaer/', u'F', u'None', u'F', u'None', u'QCD_HT2000toInf_TuneCP5_13TeV-madgraphMLM-pythia8', u'None', u'956ef9c0a89299c8cc432fd76b9359144ae7804b4f45987348c55b0fd4bce048.tar.gz', u'None', u'filetransfers', u'F', u'131.225.188.48', u'0.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2020-11-25 00:37:42.832 UTC: 	 CRAB project directory:		/uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001
+INFO 2020-11-25 00:37:42.832 UTC: 	 Task name:			201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001
+INFO 2020-11-25 00:37:42.832 UTC: 	 Grid scheduler - Task Worker:	N/A yet - N/A yet
+INFO 2020-11-25 00:37:42.832 UTC: 	 Status on the CRAB server:	NEW on command SUBMIT
+INFO 2020-11-25 00:37:42.832 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/201125_003728%3Aecannaer_crab_diquark_QCD_background_MC_2000toINF_0001
+INFO 2020-11-25 00:37:42.837 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=201125_003728%3Aecannaer_crab_diquark_QCD_background_MC_2000toINF_0001&from=1606261048000&to=now
+INFO 2020-11-25 00:37:42.837 UTC: 	 In case of issues with the dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+DEBUG 2020-11-25 00:37:42.837 UTC: 	 The task has not been submitted to the Grid scheduler yet. Not printing job information.
+INFO 2020-11-25 00:37:42.839 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001/crab.log
+DEBUG 2020-11-25 00:39:49.889 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-25 00:39:49.889 UTC: 	 Running on: Linux cmslpc167.fnal.gov 3.10.0-1127.19.1.el7.x86_64 #1 SMP Thu Aug 20 14:39:03 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2020-11-25 00:39:49.889 UTC: 	 Executing command: 'status'
+DEBUG 2020-11-25 00:39:49.892 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+DEBUG 2020-11-25 00:39:49.915 UTC: 	 Checking credentials
+DEBUG 2020-11-25 00:39:49.915 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-25 00:39:49.915 UTC: 	 Getting proxy life time left
+DEBUG 2020-11-25 00:39:50.017 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 31138
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:39:50.121 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 31137
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:39:50.121 UTC: 	 Proxy lifetime 31138 secs is different from voms extension lifetime 31137 secs for proxy: /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-25 00:39:50.121 UTC: 	 Proxy valid for 08:38:57 hours
+DEBUG 2020-11-25 00:39:50.736 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+DEBUG 2020-11-25 00:39:50.842 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -identity
+ output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:39:50.845 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2020-11-25 00:39:50.846 UTC: 	 using b7b51e0178e197a43a1d723fd43ab6570e42a3d5 as credential login name
+DEBUG 2020-11-25 00:39:51.750 UTC: 	 Executing : 
+ command : myproxy-info -l b7b51e0178e197a43a1d723fd43ab6570e42a3d5 -s myproxy.cern.ch
+ output : username: b7b51e0178e197a43a1d723fd43ab6570e42a3d5
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 430:11:29  (17.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:39:51.751 UTC: 	 Myproxy is valid: 1548689
+DEBUG 2020-11-25 00:39:51.751 UTC: 	 Retrieving username ...
+DEBUG 2020-11-25 00:39:51.751 UTC: 	 Retrieving username from CRIC...
+DEBUG 2020-11-25 00:39:52.979 UTC: 	 username is ecannaer
+DEBUG 2020-11-25 00:39:52.983 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2020-11-25 00:39:52.983 UTC: 	 using ecannaer_CRAB as credential login name
+DEBUG 2020-11-25 00:39:53.789 UTC: 	 Executing : 
+ command : myproxy-info -l ecannaer_CRAB -s myproxy.cern.ch
+ output : username: ecannaer_CRAB
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 384:50:40  (16.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 00:39:53.789 UTC: 	 Myproxy is valid: 1385440
+DEBUG 2020-11-25 00:39:53.789 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: b7b51e0178e197a43a1d723fd43ab6570e42a3d5  - validity: 17 days, 22:11:29
+  Credential exists on myproxy: username: ecannaer_CRAB  - validity: 16 days, 0:50:40
+DEBUG 2020-11-25 00:39:53.789 UTC: 	 Command use: status
+DEBUG 2020-11-25 00:39:53.789 UTC: 	 Options use: ['-d', 'crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001']
+DEBUG 2020-11-25 00:39:54.388 UTC: 	 CRABClient version: v3.201110
+DEBUG 2020-11-25 00:39:54.388 UTC: 	 Instance is prod
+DEBUG 2020-11-25 00:39:54.388 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2020-11-25 00:39:54.388 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2020-11-25 00:39:54.993 UTC: 	 Got information from server oracle database: {u'result': [u'201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2020-11-25 00:37:28.394260', u'None', u'2020-11-25 00:38:29.119445', u'None', u'CMSSW_10_6_0', u'slc7_amd64_gcc820', u'/QCD_HT2000toInf_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'7c99adf28d54e2cf43842d7bf68fbdecc5a632c13b7b19775f9bef98a88f6069.tar.gz', u'https://cmsweb-k8s-prod.cern.ch/crabcache', u'ecannaer', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert', u'cms', u'None', u'None', u'diquark_QCD_background-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['diquark_QCD_BR_MC.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0198.cern.ch/mon/cms838/201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmsgwms-collector-global.fnal.gov', u'crab3@vocms0198.cern.ch', u'F', u'[]', u'T', u'/store/user/ecannaer/', u'F', u'None', u'F', u'None', u'QCD_HT2000toInf_TuneCP5_13TeV-madgraphMLM-pythia8', u'None', u'956ef9c0a89299c8cc432fd76b9359144ae7804b4f45987348c55b0fd4bce048.tar.gz', u'54465792', u'filetransfers', u'F', u'131.225.188.48', u'0.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2020-11-25 00:39:54.994 UTC: 	 CRAB project directory:		/uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001
+INFO 2020-11-25 00:39:54.994 UTC: 	 Task name:			201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001
+INFO 2020-11-25 00:39:54.994 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0198.cern.ch - crab-prod-tw01
+INFO 2020-11-25 00:39:54.994 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2020-11-25 00:39:54.994 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/201125_003728%3Aecannaer_crab_diquark_QCD_background_MC_2000toINF_0001
+INFO 2020-11-25 00:39:54.998 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=201125_003728%3Aecannaer_crab_diquark_QCD_background_MC_2000toINF_0001&from=1606261048000&to=now
+INFO 2020-11-25 00:39:54.999 UTC: 	 In case of issues with the dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+DEBUG 2020-11-25 00:39:54.999 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 54465792)
+DEBUG 2020-11-25 00:39:54.999 UTC: 	 Webdir is located at http://vocms0198.cern.ch/mon/cms838/201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001
+DEBUG 2020-11-25 00:39:55.583 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0198/cms838/201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001
+DEBUG 2020-11-25 00:39:55.584 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0198/cms838/201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001/status_cache
+DEBUG 2020-11-25 00:39:56.169 UTC: 	 Got information from status cache file: {'11': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465804.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '10': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465803.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '13': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465806.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '12': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465805.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '15': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465808.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '14': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465807.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '17': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465810.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '16': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465809.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '1': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264713.0], 'JobIds': ['54465794.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '3': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264714.0], 'JobIds': ['54465796.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '2': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264713.0], 'JobIds': ['54465795.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '5': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264714.0], 'JobIds': ['54465798.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '4': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264714.0], 'JobIds': ['54465797.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '7': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264714.0], 'JobIds': ['54465800.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '6': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264714.0], 'JobIds': ['54465799.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '9': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264714.0], 'JobIds': ['54465802.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}, '8': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1606264714.0], 'JobIds': ['54465801.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0.0]}}
+INFO 2020-11-25 00:39:56.169 UTC: 	 Status on the scheduler:	SUBMITTED
+INFO 2020-11-25 00:39:56.169 UTC: 	 
+Jobs status:                    idle         		100.0% (17/17)
+INFO 2020-11-25 00:39:56.169 UTC: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2020-11-25 00:39:56.172 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001/crab.log
+DEBUG 2020-11-25 03:24:53.242 UTC: 	 CRAB Client version: v3.201110
+DEBUG 2020-11-25 03:24:53.243 UTC: 	 Running on: Linux cmslpc167.fnal.gov 3.10.0-1127.19.1.el7.x86_64 #1 SMP Thu Aug 20 14:39:03 CDT 2020 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2020-11-25 03:24:53.243 UTC: 	 Executing command: 'status'
+DEBUG 2020-11-25 03:24:53.243 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+DEBUG 2020-11-25 03:24:53.258 UTC: 	 Checking credentials
+DEBUG 2020-11-25 03:24:53.258 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2020-11-25 03:24:53.258 UTC: 	 Getting proxy life time left
+DEBUG 2020-11-25 03:24:53.360 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 21234
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 03:24:53.463 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 21234
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 03:24:53.463 UTC: 	 Proxy valid for 05:53:54 hours
+DEBUG 2020-11-25 03:24:54.030 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+DEBUG 2020-11-25 03:24:54.136 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -identity
+ output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 03:24:54.140 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2020-11-25 03:24:54.140 UTC: 	 using b7b51e0178e197a43a1d723fd43ab6570e42a3d5 as credential login name
+DEBUG 2020-11-25 03:24:55.144 UTC: 	 Executing : 
+ command : myproxy-info -l b7b51e0178e197a43a1d723fd43ab6570e42a3d5 -s myproxy.cern.ch
+ output : username: b7b51e0178e197a43a1d723fd43ab6570e42a3d5
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 427:26:25  (17.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 03:24:55.145 UTC: 	 Myproxy is valid: 1538785
+DEBUG 2020-11-25 03:24:55.145 UTC: 	 Retrieving username ...
+DEBUG 2020-11-25 03:24:55.145 UTC: 	 Retrieving username from CRIC...
+DEBUG 2020-11-25 03:24:56.339 UTC: 	 username is ecannaer
+DEBUG 2020-11-25 03:24:56.342 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2020-11-25 03:24:56.343 UTC: 	 using ecannaer_CRAB as credential login name
+DEBUG 2020-11-25 03:24:57.146 UTC: 	 Executing : 
+ command : myproxy-info -l ecannaer_CRAB -s myproxy.cern.ch
+ output : username: ecannaer_CRAB
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms0105.cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 382:05:36  (15.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2020-11-25 03:24:57.146 UTC: 	 Myproxy is valid: 1375536
+DEBUG 2020-11-25 03:24:57.146 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: b7b51e0178e197a43a1d723fd43ab6570e42a3d5  - validity: 17 days, 19:26:25
+  Credential exists on myproxy: username: ecannaer_CRAB  - validity: 15 days, 22:05:36
+DEBUG 2020-11-25 03:24:57.147 UTC: 	 Command use: status
+DEBUG 2020-11-25 03:24:57.147 UTC: 	 Options use: ['-d', 'crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001']
+DEBUG 2020-11-25 03:24:57.804 UTC: 	 CRABClient version: v3.201110
+DEBUG 2020-11-25 03:24:57.804 UTC: 	 Instance is prod
+DEBUG 2020-11-25 03:24:57.804 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2020-11-25 03:24:57.804 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2020-11-25 03:24:58.377 UTC: 	 Got information from server oracle database: {u'result': [u'201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2020-11-25 00:37:28.394260', u'None', u'2020-11-25 00:38:29.119445', u'None', u'CMSSW_10_6_0', u'slc7_amd64_gcc820', u'/QCD_HT2000toInf_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'7c99adf28d54e2cf43842d7bf68fbdecc5a632c13b7b19775f9bef98a88f6069.tar.gz', u'https://cmsweb-k8s-prod.cern.ch/crabcache', u'ecannaer', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert', u'cms', u'None', u'None', u'diquark_QCD_background-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['diquark_QCD_BR_MC.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0198.cern.ch/mon/cms838/201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmsgwms-collector-global.fnal.gov', u'crab3@vocms0198.cern.ch', u'F', u'[]', u'T', u'/store/user/ecannaer/', u'F', u'None', u'F', u'None', u'QCD_HT2000toInf_TuneCP5_13TeV-madgraphMLM-pythia8', u'None', u'956ef9c0a89299c8cc432fd76b9359144ae7804b4f45987348c55b0fd4bce048.tar.gz', u'54465792', u'filetransfers', u'F', u'131.225.188.48', u'0.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2020-11-25 03:24:58.377 UTC: 	 CRAB project directory:		/uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001
+INFO 2020-11-25 03:24:58.377 UTC: 	 Task name:			201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001
+INFO 2020-11-25 03:24:58.377 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0198.cern.ch - crab-prod-tw01
+INFO 2020-11-25 03:24:58.377 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2020-11-25 03:24:58.377 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/201125_003728%3Aecannaer_crab_diquark_QCD_background_MC_2000toINF_0001
+INFO 2020-11-25 03:24:58.381 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=201125_003728%3Aecannaer_crab_diquark_QCD_background_MC_2000toINF_0001&from=1606261048000&to=now
+INFO 2020-11-25 03:24:58.381 UTC: 	 In case of issues with the dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+DEBUG 2020-11-25 03:24:58.381 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 54465792)
+DEBUG 2020-11-25 03:24:58.381 UTC: 	 Webdir is located at http://vocms0198.cern.ch/mon/cms838/201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001
+DEBUG 2020-11-25 03:24:58.960 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0198/cms838/201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001
+DEBUG 2020-11-25 03:24:58.961 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0198/cms838/201125_003728:ecannaer_crab_diquark_QCD_background_MC_2000toINF_0001/status_cache
+DEBUG 2020-11-25 03:24:59.510 UTC: 	 Got information from status cache file: {'11': {'Retries': 0, 'WallDurations': [9.0, 184.0798110961914, 2116.0], 'StartTimes': [1606264896.0], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465804.0'], 'TotalUserCpuTimeHistory': [1807.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2217112], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'SiteHistory': ['Unknown', 'T2_US_Purdue', 'T2_US_Purdue'], 'TotalSysCpuTimeHistory': [33.0]}, '10': {'Retries': 0, 'WallDurations': [8.0, 183.0798110961914, 2412.0], 'StartTimes': [1606264897.0], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465803.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2069412], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'TotalUserCpuTimeHistory': [1864.0], 'SiteHistory': ['Unknown', 'T2_US_Purdue', 'T2_US_Purdue'], 'TotalSysCpuTimeHistory': [34.0]}, '13': {'Retries': 0, 'WallDurations': [9.0, 182.0798110961914, 2113.0], 'StartTimes': [1606264898.0], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465806.0'], 'TotalUserCpuTimeHistory': [1875.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2217376], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'SiteHistory': ['Unknown', 'T2_US_Florida', 'T2_US_Florida'], 'TotalSysCpuTimeHistory': [20.0]}, '12': {'Retries': 0, 'WallDurations': [9.0, 184.0798110961914, 2116.0], 'StartTimes': [1606264896.0], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465805.0'], 'TotalUserCpuTimeHistory': [1804.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2220504], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'SiteHistory': ['Unknown', 'T2_US_Purdue', 'T2_US_Purdue'], 'TotalSysCpuTimeHistory': [36.0]}, '15': {'Retries': 0, 'WallDurations': [9.0, 184.0798110961914, 2113.0], 'StartTimes': [1606264896.0], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465808.0'], 'TotalUserCpuTimeHistory': [1777.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2220776], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'SiteHistory': ['Unknown', 'T2_US_Purdue', 'T2_US_Purdue'], 'TotalSysCpuTimeHistory': [42.0]}, '14': {'Retries': 0, 'WallDurations': [8.0, 183.0798110961914, 2112.0], 'StartTimes': [1606264897.0], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465807.0'], 'TotalUserCpuTimeHistory': [1781.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2178608], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'SiteHistory': ['Unknown', 'T2_US_Purdue', 'T2_US_Purdue'], 'TotalSysCpuTimeHistory': [36.0]}, '17': {'Retries': 0, 'WallDurations': [10.0, 183.0798110961914, 1927.0], 'StartTimes': [1606264897.0], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465810.0'], 'EndTimes': [1606266824.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1926152], 'TotalUserCpuTimeHistory': [1560], 'SiteHistory': ['Unknown', 'T2_US_Florida', 'T2_US_Florida'], 'TotalSysCpuTimeHistory': [18]}, '16': {'Retries': 0, 'WallDurations': [9.0, 182.0798110961914, 3617.0], 'StartTimes': [1606264898.0], 'SubmitTimes': [1606264715.0], 'JobIds': ['54465809.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2203060], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'TotalUserCpuTimeHistory': [2575.0], 'SiteHistory': ['Unknown', 'T2_US_Nebraska', 'T2_US_Nebraska'], 'TotalSysCpuTimeHistory': [46.0]}, '1': {'Retries': 0, 'WallDurations': [9.0, 184.0798110961914, 2414.0], 'StartTimes': [1606264896.0], 'SubmitTimes': [1606264713.0], 'JobIds': ['54465794.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2260220], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2500 MB). Will not retry it.', {}], 'TotalUserCpuTimeHistory': [2041.0], 'SiteHistory': ['Unknown', 'T2_US_Purdue', 'T2_US_Purdue'], 'TotalSysCpuTimeHistory': [40.0]}, '3': {'Retries': 0, 'WallDurations': [10.0, 182.0798110961914, 3918.0], 'StartTimes': [1606264898.0], 'SubmitTimes': [1606264714.0], 'JobIds': ['54465796.0'], 'TotalUserCpuTimeHistory': [3492.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2134708], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [551.0]}, '2': {'Retries': 0, 'WallDurations': [9.0, 182.0798110961914, 3918.0], 'StartTimes': [1606264898.0], 'SubmitTimes': [1606264713.0], 'JobIds': ['54465795.0'], 'TotalUserCpuTimeHistory': [3433.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2135760], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [466.0]}, '5': {'Retries': 0, 'WallDurations': [9.0, 182.0798110961914, 2113.0], 'StartTimes': [1606264898.0], 'SubmitTimes': [1606264714.0], 'JobIds': ['54465798.0'], 'TotalUserCpuTimeHistory': [1875.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2259376], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2500 MB). Will not retry it.', {}], 'SiteHistory': ['Unknown', 'T2_US_Florida', 'T2_US_Florida'], 'TotalSysCpuTimeHistory': [21.0]}, '4': {'Retries': 0, 'WallDurations': [8.0, 183.0798110961914, 2112.0], 'StartTimes': [1606264897.0], 'SubmitTimes': [1606264714.0], 'JobIds': ['54465797.0'], 'TotalUserCpuTimeHistory': [1783.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2145920], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'SiteHistory': ['Unknown', 'T2_US_Purdue', 'T2_US_Purdue'], 'TotalSysCpuTimeHistory': [30.0]}, '7': {'Retries': 0, 'WallDurations': [8.0, 183.0798110961914, 2113.0], 'StartTimes': [1606264897.0], 'SubmitTimes': [1606264714.0], 'JobIds': ['54465800.0'], 'TotalUserCpuTimeHistory': [1867.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2307444], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2500 MB). Will not retry it.', {}], 'SiteHistory': ['Unknown', 'T2_US_Florida', 'T2_US_Florida'], 'TotalSysCpuTimeHistory': [21.0]}, '6': {'Retries': 1, 'WallDurations': [9.0, 184.0798110961914, 1992.0, 9.0, 2115.0], 'StartTimes': [1606264896.0, 1606267014.0], 'SubmitTimes': [1606264714.0, 1606266956.0], 'JobIds': ['54465799.0', '54466775.0'], 'EndTimes': [1606266888.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [1773936, 2209832], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'TotalUserCpuTimeHistory': [1615, 1879.0], 'SiteHistory': ['Unknown', 'T2_US_Purdue', 'T2_US_Purdue', 'T2_US_Purdue', 'T2_US_Purdue'], 'TotalSysCpuTimeHistory': [31, 36.0]}, '9': {'Retries': 0, 'WallDurations': [9.0, 183.0798110961914, 2114.0], 'StartTimes': [1606264897.0], 'SubmitTimes': [1606264714.0], 'JobIds': ['54465802.0'], 'TotalUserCpuTimeHistory': [1816.0], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2325076], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2500 MB). Will not retry it.', {}], 'SiteHistory': ['Unknown', 'T2_US_Florida', 'T2_US_Florida'], 'TotalSysCpuTimeHistory': [21.0]}, '8': {'Retries': 0, 'WallDurations': [8.0, 182.0798110961914, 3613.0], 'StartTimes': [1606264898.0], 'SubmitTimes': [1606264714.0], 'JobIds': ['54465801.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'failed', 'ResidentSetSize': [2208996], 'Error': [50660, 'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}], 'TotalUserCpuTimeHistory': [2517.0], 'SiteHistory': ['Unknown', 'T2_US_Nebraska', 'T2_US_Nebraska'], 'TotalSysCpuTimeHistory': [44.0]}}
+INFO 2020-11-25 03:24:59.510 UTC: 	 Status on the scheduler:	FAILED
+INFO 2020-11-25 03:24:59.510 UTC: 	 
+Jobs status:                    failed       		 94.1% (16/17)
+INFO 2020-11-25 03:24:59.510 UTC: 	 				finished     		  5.9% ( 1/17)
+INFO 2020-11-25 03:24:59.510 UTC: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2020-11-25 03:24:59.511 UTC: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+16 jobs failed with exit code 50660
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2020-11-25 03:24:59.511 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2020-11-25 03:24:59.511 UTC: 	 
+Summary of run jobs:
+ * Memory: 1881MB min, 2270MB max, 2139MB ave
+ * Runtime: 0:32:07 min, 1:05:18 max, 0:42:06 ave
+ * CPU eff: 71% min, 103% max, 87% ave
+ * Waste: 1:27:42 (11% of total)
+
+INFO 2020-11-25 03:24:59.514 UTC: 	 Log file is /uscms_data/d3/cannaert/src/thrust/CMSSW_10_6_0/src/crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001/crab.log

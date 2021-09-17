@@ -1,0 +1,2 @@
+ALL_PACKAGES += crab_projects/crab_diquark_QCD_background_MC_2000toINF_0001
+subdirs_src_crab_projects_crab_diquark_QCD_background_MC_2000toINF_0001 := src_crab_projects_crab_diquark_QCD_background_MC_2000toINF_0001_inputs
