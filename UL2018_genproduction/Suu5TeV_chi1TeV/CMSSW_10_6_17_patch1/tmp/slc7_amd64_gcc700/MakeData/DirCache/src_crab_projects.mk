@@ -1,0 +1,2 @@
+ALL_SUBSYSTEMS+=crab_projects
+subdirs_src_crab_projects = src_crab_projects_crab_MC_prod_chi1TeV_Suu5TeV_DIGI_0001 src_crab_projects_crab_MC_prod_Suu5TeV_chi1TeV_RECO_0001

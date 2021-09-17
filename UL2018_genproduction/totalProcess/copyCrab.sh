@@ -1,0 +1,5 @@
+cp crab_diquark_DIGI_prod_cfg.py Suu8TeV_chi2TeV/CMSSW_10_6_17_patch1/src
+cp crab_diquark_GENSIM_prod_cfg.py Suu8TeV_chi2TeV/CMSSW_10_6_18/src
+cp crab_diquark_HLT_prod_cfg.py Suu8TeV_chi2TeV/CMSSW_10_2_16_UL/src
+cp crab_diquark_MINIAOD_prod_cfg.py Suu8TeV_chi2TeV/CMSSW_10_6_20/src
+cp crab_diquark_RECO_prod_cfg.py Suu8TeV_chi2TeV/CMSSW_10_6_17_patch1/src

@@ -1,0 +1,53 @@
+DEBUG 2021-09-08 16:08:04.635 UTC: 	 CRAB Client version: v3.210825
+DEBUG 2021-09-08 16:08:04.636 UTC: 	 Running on: Linux cmslpc116.fnal.gov 3.10.0-1160.36.2.el7.x86_64 #1 SMP Mon Jul 26 08:21:44 CDT 2021 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2021-09-08 16:08:04.636 UTC: 	 Executing command: 'submit'
+DEBUG 2021-09-08 16:08:04.636 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2021-09-08 16:08:04.639 UTC: 	 Will use CRAB configuration file Suu8TeV_chi2TeV/CMSSW_10_2_16_UL/src/crab_diquark_HLT_prod_new_cfg.py
+DEBUG 2021-09-08 16:08:04.639 UTC: 	 Loading CRAB configuration file.
+DEBUG 2021-09-08 16:08:04.650 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2021-09-08 16:08:04.671 UTC: 	 Checking credentials
+DEBUG 2021-09-08 16:08:04.671 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2021-09-08 16:08:04.671 UTC: 	 Getting proxy life time left
+DEBUG 2021-09-08 16:08:04.776 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 41155
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-08 16:08:04.881 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 41155
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-08 16:08:04.882 UTC: 	 Proxy valid for 11:25:55 hours
+DEBUG 2021-09-08 16:08:04.987 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-08 16:08:05.575 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+DEBUG 2021-09-08 16:08:05.687 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -identity
+ output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-08 16:08:05.694 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2021-09-08 16:08:05.694 UTC: 	 using b7b51e0178e197a43a1d723fd43ab6570e42a3d5 as credential login name
+DEBUG 2021-09-08 16:08:06.601 UTC: 	 Executing : 
+ command : myproxy-info -l b7b51e0178e197a43a1d723fd43ab6570e42a3d5 -s myproxy.cern.ch
+ output : username: b7b51e0178e197a43a1d723fd43ab6570e42a3d5
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 690:55:03  (28.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-08 16:08:06.602 UTC: 	 Myproxy is valid: 2487303
+DEBUG 2021-09-08 16:08:06.603 UTC: 	 Retrieving username ...
+DEBUG 2021-09-08 16:08:06.603 UTC: 	 Retrieving username from CRIC...
+ERROR 2021-09-08 16:08:10.427 UTC: 	 Keyboard Interrupted
+INFO 2021-09-08 16:08:10.431 UTC: 	 Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/crab_projects/crab_MC_prod_Suu8TeV_chi2TeV_ALL_DECAYS_HLT_0001/crab.log

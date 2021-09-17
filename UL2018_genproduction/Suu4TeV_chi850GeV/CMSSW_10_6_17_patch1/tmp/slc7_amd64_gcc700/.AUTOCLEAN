@@ -1,0 +1,4 @@
+
+/usr/bin/rm -rf tmp/slc7_amd64_gcc700/edmplugins/poison/crab_projects/crab_MC_prod_chi850GeV_Suu4TeV_DIGI_0001
+/usr/bin/rm -rf tmp/slc7_amd64_gcc700/edmplugins/poison/crab_projects/crab_MC_prod_chi850GeV_Suu4TeV_RECO_0001
+/usr/bin/touch tmp/common/cache/packs/changed

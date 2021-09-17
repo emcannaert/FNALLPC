@@ -1,0 +1,2 @@
+ALL_PACKAGES += crab_projects/crab_MC_prod_Suu5TeV_chi1TeV_MINIAOD_0001
+subdirs_src_crab_projects_crab_MC_prod_Suu5TeV_chi1TeV_MINIAOD_0001 := src_crab_projects_crab_MC_prod_Suu5TeV_chi1TeV_MINIAOD_0001_inputs

@@ -1,0 +1,123 @@
+DEBUG 2021-09-08 15:43:17.722 UTC: 	 CRAB Client version: v3.210825
+DEBUG 2021-09-08 15:43:17.723 UTC: 	 Running on: Linux cmslpc116.fnal.gov 3.10.0-1160.36.2.el7.x86_64 #1 SMP Mon Jul 26 08:21:44 CDT 2021 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2021-09-08 15:43:17.723 UTC: 	 Executing command: 'submit'
+DEBUG 2021-09-08 15:43:17.724 UTC: 	 Found CRAB cache file /uscms/home/cannaert/.crab3
+INFO 2021-09-08 15:43:17.727 UTC: 	 Will use CRAB configuration file Suu7TeV_chi1TeV/CMSSW_10_2_16_UL/src/crab_diquark_HLT_prod_new_cfg.py
+DEBUG 2021-09-08 15:43:17.728 UTC: 	 Loading CRAB configuration file.
+DEBUG 2021-09-08 15:43:17.735 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2021-09-08 15:43:17.753 UTC: 	 Checking credentials
+DEBUG 2021-09-08 15:43:17.753 UTC: 	 Found proxy file /uscms/home/cannaert/x509up_u54552
+DEBUG 2021-09-08 15:43:17.753 UTC: 	 Getting proxy life time left
+DEBUG 2021-09-08 15:43:17.861 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -timeleft
+ output : 42642
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-08 15:43:17.965 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -actimeleft
+ output : 42642
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-08 15:43:17.966 UTC: 	 Proxy valid for 11:50:42 hours
+DEBUG 2021-09-08 15:43:18.070 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/cannaert/x509up_u54552 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-08 15:43:18.632 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+DEBUG 2021-09-08 15:43:18.745 UTC: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/cannaert/x509up_u54552 -identity
+ output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-08 15:43:18.753 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2021-09-08 15:43:18.753 UTC: 	 using b7b51e0178e197a43a1d723fd43ab6570e42a3d5 as credential login name
+DEBUG 2021-09-08 15:43:19.560 UTC: 	 Executing : 
+ command : myproxy-info -l b7b51e0178e197a43a1d723fd43ab6570e42a3d5 -s myproxy.cern.ch
+ output : username: b7b51e0178e197a43a1d723fd43ab6570e42a3d5
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 691:19:50  (28.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-08 15:43:19.561 UTC: 	 Myproxy is valid: 2488790
+DEBUG 2021-09-08 15:43:19.561 UTC: 	 Retrieving username ...
+DEBUG 2021-09-08 15:43:19.561 UTC: 	 Retrieving username from CRIC...
+DEBUG 2021-09-08 15:43:21.073 UTC: 	 username is ecannaer
+DEBUG 2021-09-08 15:43:21.080 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2021-09-08 15:43:21.081 UTC: 	 using ecannaer_CRAB as credential login name
+DEBUG 2021-09-08 15:43:22.090 UTC: 	 Executing : 
+ command : myproxy-info -l ecannaer_CRAB -s myproxy.cern.ch
+ output : username: ecannaer_CRAB
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ecannaer/CN=832417/CN=Ethan Cannaert
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(02|01).cern.ch|/DC=ch/DC=cern/OU=computers/CN=(ddi|ddidk|mytw).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch
+  timeleft: 692:01:13  (28.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2021-09-08 15:43:22.090 UTC: 	 Myproxy is valid: 2491273
+DEBUG 2021-09-08 15:43:22.091 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: b7b51e0178e197a43a1d723fd43ab6570e42a3d5  - validity: 28 days, 19:19:50
+  Credential exists on myproxy: username: ecannaer_CRAB  - validity: 28 days, 20:01:13
+DEBUG 2021-09-08 15:43:22.091 UTC: 	 Command use: submit
+DEBUG 2021-09-08 15:43:22.091 UTC: 	 Options use: ['-c', 'Suu7TeV_chi1TeV/CMSSW_10_2_16_UL/src/crab_diquark_HLT_prod_new_cfg.py']
+DEBUG 2021-09-08 15:43:22.691 UTC: 	 CRABClient version: v3.210825
+DEBUG 2021-09-08 15:43:22.691 UTC: 	 Instance is prod
+DEBUG 2021-09-08 15:43:22.691 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2021-09-08 15:43:22.691 UTC: 	 Command api workflow
+DEBUG 2021-09-08 15:43:22.691 UTC: 	 Started submission
+DEBUG 2021-09-08 15:43:22.691 UTC: 	 Working on /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/crab_projects/crab_MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_HLT_0001
+DEBUG 2021-09-08 15:43:23.338 UTC: 	 Loading required information from the environment
+DEBUG 2021-09-08 15:43:23.339 UTC: 	 Found CMSSW_10_2_16_UL for slc7_amd64_gcc700 with base /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi500GeV/CMSSW_10_2_16_UL
+DEBUG 2021-09-08 15:43:23.339 UTC: 	 Loading required information from the environment
+DEBUG 2021-09-08 15:43:23.339 UTC: 	 Found CMSSW_10_2_16_UL for slc7_amd64_gcc700 with base /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi500GeV/CMSSW_10_2_16_UL
+DEBUG 2021-09-08 15:43:23.339 UTC: 	 UNIQUE NAME: tarUUID f206160a-d99d-490c-9087-5a94abf290a0 
+DEBUG 2021-09-08 15:43:23.339 UTC: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferOutputs = True
+config.General.workArea = 'crab_projects'
+config.General.requestName = 'MC_prod_Suu7TeV_chi1TeV_ALL_DECAYS_HLT_0001'
+config.section_('JobType')
+config.JobType.psetName = 'B2G-RunIISummer20UL18HLT-00001_1_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.allowUndistributedCMSSW = True
+config.JobType.maxMemoryMB = 4000
+config.section_('Data')
+config.Data.inputDataset = '/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-7TeV_Mchi-2TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935/USER'
+config.Data.outputDatasetTag = 'B2G-RunIISummer20UL18p_Suu7TeV_chi1TeV_ALLDECAYS_TuneCP5_13TeV-pythia8_HLT'
+config.Data.publishDBS = 'phys03'
+config.Data.publication = True
+config.Data.unitsPerJob = 1
+config.Data.inputDBS = 'phys03'
+config.Data.splitting = 'FileBased'
+config.Data.totalUnits = -1
+config.section_('Site')
+config.Site.storageSite = 'T3_US_FNALLPC'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2021-09-08 15:43:23.339 UTC: 	 self.config.JobType.psetName: B2G-RunIISummer20UL18HLT-00001_1_cfg.py
+ERROR 2021-09-08 15:43:23.339 UTC: 	 
+Cannot find CMSSW configuration file B2G-RunIISummer20UL18HLT-00001_1_cfg.py in /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess
+ERROR 2021-09-08 15:43:23.339 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210825.00/bin/crab", line 151, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210825.00/bin/crab", line 138, in __call__
+    self.cmd()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210825.00/lib/CRABClient/Commands/submit.py", line 102, in __call__
+    dummy_inputfiles, jobconfig = plugjobtype.run(filecacheurl)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210825.00/lib/CRABClient/JobType/Analysis.py", line 85, in run
+    userConfig=self.config.JobType.psetName)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.210825.00/lib/CRABClient/JobType/CMSSWConfig.py", line 41, in __init__
+    raise ConfigurationException(msg)
+ConfigurationException: 
+Cannot find CMSSW configuration file B2G-RunIISummer20UL18HLT-00001_1_cfg.py in /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess

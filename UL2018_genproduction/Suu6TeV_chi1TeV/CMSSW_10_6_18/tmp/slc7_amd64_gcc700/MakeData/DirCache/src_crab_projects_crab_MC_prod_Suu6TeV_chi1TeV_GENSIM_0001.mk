@@ -1,0 +1,2 @@
+ALL_PACKAGES += crab_projects/crab_MC_prod_Suu6TeV_chi1TeV_GENSIM_0001
+subdirs_src_crab_projects_crab_MC_prod_Suu6TeV_chi1TeV_GENSIM_0001 := 

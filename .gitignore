@@ -1,0 +1,12 @@
+EXO-MCsampleProductions/
+genproduction/
+genproduction_chi1TeV/
+genproduction_chi1TeV_Suu5TeV/
+genproduction_chi1TeV_Suu6TeV/
+genproduction_chi3TeV_Suu8TeV/
+genproduction_chi500GeV/
+genproduction_chi850GeV_Suu4TeV/
+genproduction_chi850GeV_Suu5TeV/
+src/
+particleTreeDrawer_cfg.py
+*.root

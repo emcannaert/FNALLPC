@@ -1,0 +1,377 @@
+CRAB project directory:		/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu4TeV_chi1TeV_ALLDECAY_DIGI_0001
+Task name:			210906_114252:ecannaer_crab_MC_prod_cSuu4TeV_chi1TeV_ALLDECAY_DIGI_0001
+Grid scheduler - Task Worker:	crab3@vocms0195.cern.ch - crab-prod-tw01
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/210906_114252%3Aecannaer_crab_MC_prod_cSuu4TeV_chi1TeV_ALLDECAY_DIGI_0001
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=210906_114252%3Aecannaer_crab_MC_prod_cSuu4TeV_chi1TeV_ALLDECAY_DIGI_0001&from=1630924972000&to=now
+Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+Status on the scheduler:	COMPLETED
+
+Jobs status:                    finished     		100.0% (200/200)
+
+Publication status of 1 dataset(s):	done         		100.0% (200/200)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-4TeV_Mchi-1TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FSuuToChiChi%2Fecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-4TeV_Mchi-1TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935%2FUSER&instance=prod%2Fphys03
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Warning: the max jobs memory is less than 70% of the task requested value (4000 MB), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 1844MB min, 2034MB max, 1903MB ave
+ * Runtime: 0:05:28 min, 0:17:30 max, 0:10:33 ave
+ * CPU eff: 26% min, 82% max, 67% ave
+ * Waste: 9:13:15 (21% of total)
+
+Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu4TeV_chi1TeV_ALLDECAY_DIGI_0001/crab.log
+CRAB project directory:		/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi1p5TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_Suu4TeV_chi1p5TeV_ALLDECAY_DIGI_0001
+Task name:			210906_114802:ecannaer_crab_MC_prod_Suu4TeV_chi1p5TeV_ALLDECAY_DIGI_0001
+Grid scheduler - Task Worker:	crab3@vocms0121.cern.ch - crab-prod-tw01
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/210906_114802%3Aecannaer_crab_MC_prod_Suu4TeV_chi1p5TeV_ALLDECAY_DIGI_0001
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=210906_114802%3Aecannaer_crab_MC_prod_Suu4TeV_chi1p5TeV_ALLDECAY_DIGI_0001&from=1630925282000&to=now
+Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+Status on the scheduler:	SUBMITTED
+
+Jobs status:                    finished     		 94.0% (188/200)
+				running      		  3.5% (  7/200)
+				transferring 		  2.5% (  5/200)
+
+Publication status of 1 dataset(s):	done         		 94.0% (188/200)
+(from CRAB internal bookkeeping in transferdb)
+					unsubmitted  		  6.0% ( 12/200)
+
+Output dataset:			/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-4TeV_Mchi-1p5TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FSuuToChiChi%2Fecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-4TeV_Mchi-1p5TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935%2FUSER&instance=prod%2Fphys03
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Warning: the max jobs memory is less than 70% of the task requested value (4000 MB), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 5MB min, 2215MB max, 1617MB ave
+ * Runtime: 0:00:44 min, 0:14:15 max, 0:07:09 ave
+ * CPU eff: 54% min, 85% max, 74% ave
+ * Waste: 12:16:38 (35% of total)
+
+Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi1p5TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_Suu4TeV_chi1p5TeV_ALLDECAY_DIGI_0001/crab.log
+CRAB project directory:		/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi850GeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu4TeV_chi850GeV_ALLDECAY_DIGI_0001
+Task name:			210906_115344:ecannaer_crab_MC_prod_cSuu4TeV_chi850GeV_ALLDECAY_DIGI_0001
+Grid scheduler - Task Worker:	crab3@vocms0199.cern.ch - crab-prod-tw01
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/210906_115344%3Aecannaer_crab_MC_prod_cSuu4TeV_chi850GeV_ALLDECAY_DIGI_0001
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=210906_115344%3Aecannaer_crab_MC_prod_cSuu4TeV_chi850GeV_ALLDECAY_DIGI_0001&from=1630925624000&to=now
+Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+Status on the scheduler:	SUBMITTED
+
+Jobs status:                    finished     		 97.5% (195/200)
+				idle         		  2.5% (  5/200)
+
+Publication status of 1 dataset(s):	done         		 97.5% (195/200)
+(from CRAB internal bookkeeping in transferdb)
+					unsubmitted  		  2.5% (  5/200)
+
+Output dataset:			/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-4TeV_Mchi-850GeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FSuuToChiChi%2Fecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-4TeV_Mchi-850GeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935%2FUSER&instance=prod%2Fphys03
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Warning: the max jobs memory is less than 70% of the task requested value (4000 MB), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 0MB min, 2032MB max, 1877MB ave
+ * Runtime: 0:00:00 min, 0:12:00 max, 0:10:07 ave
+ * CPU eff: 52% min, 83% max, 67% ave
+ * Waste: 6:50:26 (17% of total)
+
+Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu4TeV_chi850GeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu4TeV_chi850GeV_ALLDECAY_DIGI_0001/crab.log
+Error: Suu4TeV_chi500GeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu4TeV_chi850GeV_ALLDECAY_DIGI_0001/ is not a valid CRAB project directory.
+Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/crab.log
+CRAB project directory:		/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu5TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu5TeV_chi1TeV_ALLDECAY_DIGI_0001
+Task name:			210906_115702:ecannaer_crab_MC_prod_cSuu5TeV_chi1TeV_ALLDECAY_DIGI_0001
+Grid scheduler - Task Worker:	crab3@vocms0199.cern.ch - crab-prod-tw01
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/210906_115702%3Aecannaer_crab_MC_prod_cSuu5TeV_chi1TeV_ALLDECAY_DIGI_0001
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=210906_115702%3Aecannaer_crab_MC_prod_cSuu5TeV_chi1TeV_ALLDECAY_DIGI_0001&from=1630925823000&to=now
+Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+Status on the scheduler:	SUBMITTED
+
+Jobs status:                    finished     		 26.5% ( 53/200)
+				idle         		 19.0% ( 38/200)
+				running      		 18.5% ( 37/200)
+				toRetry      		  3.5% (  7/200)
+				transferring 		 32.5% ( 65/200)
+
+Publication status of 1 dataset(s):	done         		 26.5% ( 53/200)
+(from CRAB internal bookkeeping in transferdb)
+					unsubmitted  		 73.5% (147/200)
+
+Output dataset:			/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-5TeV_Mchi-1TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FSuuToChiChi%2Fecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-5TeV_Mchi-1TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935%2FUSER&instance=prod%2Fphys03
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Warning: the max jobs memory is less than 70% of the task requested value (4000 MB), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 0MB min, 2140MB max, 1918MB ave
+ * Runtime: 0:00:00 min, 0:18:29 max, 0:08:52 ave
+ * CPU eff: 41% min, 83% max, 70% ave
+ * Waste: 52:39:25 (74% of total)
+
+Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu5TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu5TeV_chi1TeV_ALLDECAY_DIGI_0001/crab.log
+CRAB project directory:		/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu5TeV_chi1p5TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu5TeV_chi1p5TeV_ALLDECAY_DIGI_0001
+Task name:			210906_120043:ecannaer_crab_MC_prod_cSuu5TeV_chi1p5TeV_ALLDECAY_DIGI_0001
+Grid scheduler - Task Worker:	crab3@vocms0106.cern.ch - crab-prod-tw01
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/210906_120043%3Aecannaer_crab_MC_prod_cSuu5TeV_chi1p5TeV_ALLDECAY_DIGI_0001
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=210906_120043%3Aecannaer_crab_MC_prod_cSuu5TeV_chi1p5TeV_ALLDECAY_DIGI_0001&from=1630926043000&to=now
+Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+Status on the scheduler:	SUBMITTED
+
+Jobs status:                    finished     		 96.0% (192/200)
+				idle         		  2.5% (  5/200)
+				running      		  0.5% (  1/200)
+				toRetry      		  0.5% (  1/200)
+				transferring 		  0.5% (  1/200)
+
+Publication status of 1 dataset(s):	done         		 96.0% (192/200)
+(from CRAB internal bookkeeping in transferdb)
+					unsubmitted  		  4.0% (  8/200)
+
+Output dataset:			/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-5TeV_Mchi-1p5TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FSuuToChiChi%2Fecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-5TeV_Mchi-1p5TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935%2FUSER&instance=prod%2Fphys03
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Warning: the max jobs memory is less than 70% of the task requested value (4000 MB), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 0MB min, 2178MB max, 1335MB ave
+ * Runtime: 0:00:00 min, 0:29:33 max, 0:07:08 ave
+ * CPU eff: 17% min, 86% max, 71% ave
+ * Waste: 8:31:49 (27% of total)
+
+Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu5TeV_chi1p5TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu5TeV_chi1p5TeV_ALLDECAY_DIGI_0001/crab.log
+CRAB project directory:		/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu5TeV_chi2TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu5TeV_chi2TeV_ALLDECAY_DIGI_0001
+Task name:			210906_120307:ecannaer_crab_MC_prod_cSuu5TeV_chi2TeV_ALLDECAY_DIGI_0001
+Grid scheduler - Task Worker:	crab3@vocms0199.cern.ch - crab-prod-tw01
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/210906_120307%3Aecannaer_crab_MC_prod_cSuu5TeV_chi2TeV_ALLDECAY_DIGI_0001
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=210906_120307%3Aecannaer_crab_MC_prod_cSuu5TeV_chi2TeV_ALLDECAY_DIGI_0001&from=1630926187000&to=now
+Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+Status on the scheduler:	SUBMITTED
+
+Jobs status:                    idle         		100.0% (200/200)
+
+No publication information available yet
+Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu5TeV_chi2TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu5TeV_chi2TeV_ALLDECAY_DIGI_0001/crab.log
+CRAB project directory:		/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu6TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu6TeV_chi1TeV_ALLDECAY_DIGI_0001
+Task name:			210906_120641:ecannaer_crab_MC_prod_cSuu6TeV_chi1TeV_ALLDECAY_DIGI_0001
+Grid scheduler - Task Worker:	crab3@vocms0106.cern.ch - crab-prod-tw01
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/210906_120641%3Aecannaer_crab_MC_prod_cSuu6TeV_chi1TeV_ALLDECAY_DIGI_0001
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=210906_120641%3Aecannaer_crab_MC_prod_cSuu6TeV_chi1TeV_ALLDECAY_DIGI_0001&from=1630926401000&to=now
+Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+Status on the scheduler:	SUBMITTED
+
+Jobs status:                    finished     		 61.5% (123/200)
+				idle         		  2.5% (  5/200)
+				running      		  6.5% ( 13/200)
+				toRetry      		  2.0% (  4/200)
+				transferring 		 27.5% ( 55/200)
+
+Publication status of 1 dataset(s):	done         		 61.5% (123/200)
+(from CRAB internal bookkeeping in transferdb)
+					unsubmitted  		 38.5% ( 77/200)
+
+Output dataset:			/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-6TeV_Mchi-1TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FSuuToChiChi%2Fecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-6TeV_Mchi-1TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935%2FUSER&instance=prod%2Fphys03
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Warning: the max jobs memory is less than 70% of the task requested value (4000 MB), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 0MB min, 2145MB max, 1135MB ave
+ * Runtime: 0:00:00 min, 0:18:41 max, 0:06:39 ave
+ * CPU eff: 49% min, 81% max, 74% ave
+ * Waste: 42:41:03 (68% of total)
+
+Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu6TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu6TeV_chi1TeV_ALLDECAY_DIGI_0001/crab.log
+CRAB project directory:		/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu6TeV_chi1p5TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu6TeV_chi1p5TeV_ALLDECAY_DIGI_0001
+Task name:			210906_120913:ecannaer_crab_MC_prod_cSuu6TeV_chi1p5TeV_ALLDECAY_DIGI_0001
+Grid scheduler - Task Worker:	crab3@vocms0121.cern.ch - crab-prod-tw01
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/210906_120913%3Aecannaer_crab_MC_prod_cSuu6TeV_chi1p5TeV_ALLDECAY_DIGI_0001
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=210906_120913%3Aecannaer_crab_MC_prod_cSuu6TeV_chi1p5TeV_ALLDECAY_DIGI_0001&from=1630926553000&to=now
+Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+Status on the scheduler:	SUBMITTED
+
+Jobs status:                    finished     		 16.5% ( 33/200)
+				idle         		  0.5% (  1/200)
+				running      		 13.5% ( 27/200)
+				toRetry      		  2.5% (  5/200)
+				transferring 		 67.0% (134/200)
+
+Publication status of 1 dataset(s):	done         		 16.5% ( 33/200)
+(from CRAB internal bookkeeping in transferdb)
+					unsubmitted  		 83.5% (167/200)
+
+Output dataset:			/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-6TeV_Mchi-1p5TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FSuuToChiChi%2Fecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-6TeV_Mchi-1p5TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935%2FUSER&instance=prod%2Fphys03
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Warning: the max jobs memory is less than 70% of the task requested value (4000 MB), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 0MB min, 2144MB max, 1589MB ave
+ * Runtime: 0:00:00 min, 0:18:11 max, 0:07:46 ave
+ * CPU eff: 40% min, 82% max, 73% ave
+ * Waste: 77:43:50 (78% of total)
+
+Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu6TeV_chi1p5TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu6TeV_chi1p5TeV_ALLDECAY_DIGI_0001/crab.log
+CRAB project directory:		/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu6TeV_chi2TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu6TeV_chi2TeV_ALLDECAY_DIGI_0001
+Task name:			210906_121209:ecannaer_crab_MC_prod_cSuu6TeV_chi2TeV_ALLDECAY_DIGI_0001
+Grid scheduler - Task Worker:	crab3@vocms0122.cern.ch - crab-prod-tw01
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/210906_121209%3Aecannaer_crab_MC_prod_cSuu6TeV_chi2TeV_ALLDECAY_DIGI_0001
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=210906_121209%3Aecannaer_crab_MC_prod_cSuu6TeV_chi2TeV_ALLDECAY_DIGI_0001&from=1630926729000&to=now
+Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+Status on the scheduler:	COMPLETED
+
+Jobs status:                    finished     		100.0% (200/200)
+
+Publication status of 1 dataset(s):	done         		100.0% (200/200)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-6TeV_Mchi-2TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FSuuToChiChi%2Fecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-6TeV_Mchi-2TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935%2FUSER&instance=prod%2Fphys03
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Warning: the max jobs memory is less than 70% of the task requested value (4000 MB), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 1849MB min, 2029MB max, 1875MB ave
+ * Runtime: 0:06:09 min, 0:13:03 max, 0:09:52 ave
+ * CPU eff: 52% min, 84% max, 67% ave
+ * Waste: 10:14:32 (24% of total)
+
+Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu6TeV_chi2TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu6TeV_chi2TeV_ALLDECAY_DIGI_0001/crab.log
+CRAB project directory:		/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu7TeV_chi1TeV_ALLDECAY_DIGI_0001
+Task name:			210906_121431:ecannaer_crab_MC_prod_cSuu7TeV_chi1TeV_ALLDECAY_DIGI_0001
+Grid scheduler - Task Worker:	crab3@vocms0106.cern.ch - crab-prod-tw01
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/210906_121431%3Aecannaer_crab_MC_prod_cSuu7TeV_chi1TeV_ALLDECAY_DIGI_0001
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=210906_121431%3Aecannaer_crab_MC_prod_cSuu7TeV_chi1TeV_ALLDECAY_DIGI_0001&from=1630926872000&to=now
+Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+Status on the scheduler:	SUBMITTED
+
+Jobs status:                    idle         		 79.5% (159/200)
+				running      		 20.5% ( 41/200)
+
+No publication information available yet
+Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu7TeV_chi1TeV_ALLDECAY_DIGI_0001/crab.log
+CRAB project directory:		/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi2TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu7TeV_chi2TeV_ALLDECAY_DIGI_0001
+Task name:			210906_121714:ecannaer_crab_MC_prod_cSuu7TeV_chi2TeV_ALLDECAY_DIGI_0001
+Grid scheduler - Task Worker:	crab3@vocms0198.cern.ch - crab-prod-tw01
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/210906_121714%3Aecannaer_crab_MC_prod_cSuu7TeV_chi2TeV_ALLDECAY_DIGI_0001
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=210906_121714%3Aecannaer_crab_MC_prod_cSuu7TeV_chi2TeV_ALLDECAY_DIGI_0001&from=1630927035000&to=now
+Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+Status on the scheduler:	COMPLETED
+
+Jobs status:                    finished     		100.0% (200/200)
+
+Publication status of 1 dataset(s):	done         		100.0% (200/200)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-7TeV_Mchi-2TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FSuuToChiChi%2Fecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-7TeV_Mchi-2TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935%2FUSER&instance=prod%2Fphys03
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Warning: the max jobs memory is less than 70% of the task requested value (4000 MB), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 50MB min, 2045MB max, 1112MB ave
+ * Runtime: 0:06:37 min, 0:12:33 max, 0:08:57 ave
+ * CPU eff: 47% min, 69% max, 59% ave
+ * Waste: 9:01:48 (23% of total)
+
+Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi2TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu7TeV_chi2TeV_ALLDECAY_DIGI_0001/crab.log
+CRAB project directory:		/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi3TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu7TeV_chi3TeV_ALLDECAY_DIGI_0001
+Task name:			210906_121925:ecannaer_crab_MC_prod_cSuu7TeV_chi3TeV_ALLDECAY_DIGI_0001
+Grid scheduler - Task Worker:	crab3@vocms0119.cern.ch - crab-prod-tw01
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/210906_121925%3Aecannaer_crab_MC_prod_cSuu7TeV_chi3TeV_ALLDECAY_DIGI_0001
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=210906_121925%3Aecannaer_crab_MC_prod_cSuu7TeV_chi3TeV_ALLDECAY_DIGI_0001&from=1630927165000&to=now
+Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+Status on the scheduler:	COMPLETED
+
+Jobs status:                    finished     		100.0% (200/200)
+
+Publication status of 1 dataset(s):	done         		100.0% (200/200)
+(from CRAB internal bookkeeping in transferdb)
+
+Output dataset:			/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-7TeV_Mchi-3TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FSuuToChiChi%2Fecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-7TeV_Mchi-3TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935%2FUSER&instance=prod%2Fphys03
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Warning: the max jobs memory is less than 70% of the task requested value (4000 MB), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 1891MB min, 2019MB max, 1867MB ave
+ * Runtime: 0:05:55 min, 0:11:35 max, 0:10:36 ave
+ * CPU eff: 60% min, 81% max, 67% ave
+ * Waste: 9:30:45 (21% of total)
+
+Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu7TeV_chi3TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu7TeV_chi3TeV_ALLDECAY_DIGI_0001/crab.log
+CRAB project directory:		/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu8TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu8TeV_chi1TeV_ALLDECAY_DIGI_0001
+Task name:			210906_122159:ecannaer_crab_MC_prod_cSuu8TeV_chi1TeV_ALLDECAY_DIGI_0001
+Grid scheduler - Task Worker:	crab3@vocms0194.cern.ch - crab-prod-tw01
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/210906_122159%3Aecannaer_crab_MC_prod_cSuu8TeV_chi1TeV_ALLDECAY_DIGI_0001
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=210906_122159%3Aecannaer_crab_MC_prod_cSuu8TeV_chi1TeV_ALLDECAY_DIGI_0001&from=1630927320000&to=now
+Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+Status on the scheduler:	SUBMITTED
+
+Jobs status:                    finished     		 99.5% (199/200)
+				toRetry      		  0.5% (  1/200)
+
+Publication status of 1 dataset(s):	done         		 99.5% (199/200)
+(from CRAB internal bookkeeping in transferdb)
+					unsubmitted  		  0.5% (  1/200)
+
+Output dataset:			/SuuToChiChi/ecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-8TeV_Mchi-1TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FSuuToChiChi%2Fecannaer-B2G-RunIISummer20UL18p_ecannaer-SuuToChiChi_ALLDECAY_MSuu-8TeV_Mchi-1TeV_TuneCP5_13TeV-pythia8_DIGI-9adadcc17762fca403271264a38b5935%2FUSER&instance=prod%2Fphys03
+
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Warning: the max jobs memory is less than 70% of the task requested value (4000 MB), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+
+Summary of run jobs:
+ * Memory: 1914MB min, 1986MB max, 1874MB ave
+ * Runtime: 0:05:48 min, 0:11:29 max, 0:10:03 ave
+ * CPU eff: 50% min, 79% max, 66% ave
+ * Waste: 8:42:54 (21% of total)
+
+Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu8TeV_chi1TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu8TeV_chi1TeV_ALLDECAY_DIGI_0001/crab.log
+CRAB project directory:		/uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu8TeV_chi2TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu8TeV_chi2TeV_ALLDECAY_DIGI_0001
+Task name:			210906_122410:ecannaer_crab_MC_prod_cSuu8TeV_chi2TeV_ALLDECAY_DIGI_0001
+Grid scheduler - Task Worker:	crab3@vocms0199.cern.ch - crab-prod-tw01
+Status on the CRAB server:	SUBMITTED
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/210906_122410%3Aecannaer_crab_MC_prod_cSuu8TeV_chi2TeV_ALLDECAY_DIGI_0001
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=ecannaer&var-task=210906_122410%3Aecannaer_crab_MC_prod_cSuu8TeV_chi2TeV_ALLDECAY_DIGI_0001&from=1630927450000&to=now
+Warning:			Task requests 4000 MB of memory, but only 2500 MB are guaranteed to be available. Jobs may not find a site where to run and stay idle forever.
+Status on the scheduler:	SUBMITTED
+
+Jobs status:                    idle         		100.0% (200/200)
+
+No publication information available yet
+Log file is /uscms_data/d3/cannaert/UL2018_genproduction/totalProcess/Suu8TeV_chi2TeV/CMSSW_10_6_17_patch1/src/crab_projects/crab_MC_prod_cSuu8TeV_chi2TeV_ALLDECAY_DIGI_0001/crab.log
